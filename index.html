@@ -3,17 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Free, comprehensive database of below market rate (BMR) affordable rental housing across 14 Bay Area cities. Search by city, income level, and bedroom count.">
+  <meta name="description" content="Free, comprehensive database of below market rate (BMR) affordable rental units across 14 Bay Area cities. Search by city, income level, and bedroom count.">
   <meta property="og:title" content="Bay Area BMR — Find Affordable Housing">
   <meta property="og:description" content="Free database of deed-restricted BMR rental units across 14 Bay Area cities. Updated every two months via public records requests.">
   <meta property="og:url" content="https://bayareabmr.org">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://maps.googleapis.com; connect-src 'self'; font-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';">
   <title>Bay Area BMR — Find Affordable Housing</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- NAV -->
   <nav class="nav" role="navigation" aria-label="Main navigation">
     <a href="index.html" class="nav-logo" aria-label="Bay Area BMR home">Bay Area BMR</a>
     <div class="nav-links">
@@ -37,14 +35,13 @@
     <a href="about.html">About</a>
   </div>
 
-  <!-- HERO -->
   <section class="hero" aria-label="Search">
     <div class="hero-inner">
       <h1 id="hero-title">Find below market rate housing in the Bay Area</h1>
       <p id="hero-sub">Free, comprehensive database of deed-restricted affordable rental units across 14 Bay Area cities. Updated every two months via public records requests.</p>
       <div class="search-row" role="search">
         <label for="search-input" class="sr-only">Search units</label>
-        <input type="text" id="search-input" placeholder="Search by city, address, or name..." aria-label="Search by city, address, or name" maxlength="200">
+        <input type="text" id="search-input" placeholder="Search by city, address, or name..." aria-label="Search by city, address, or name">
         <label for="city-filter" class="sr-only">Filter by city</label>
         <select id="city-filter" aria-label="Filter by city">
           <option value="">All cities</option>
@@ -75,10 +72,7 @@
     </div>
   </section>
 
-  <!-- MAIN -->
   <div class="main-layout">
-
-    <!-- SIDEBAR -->
     <aside class="sidebar" aria-label="Filters">
       <h2 class="sidebar-heading">Income level</h2>
       <label class="filter-option"><input type="checkbox" value="vl" checked> Very low (30–50% AMI)</label>
@@ -94,7 +88,6 @@
       </div>
     </aside>
 
-    <!-- RESULTS -->
     <main class="results" id="main-content" aria-live="polite">
       <div class="data-notice" role="note">
         <span class="notice-icon" aria-hidden="true">i</span>
@@ -113,6 +106,30 @@
       <div id="unit-list" aria-label="Housing listings"></div>
     </main>
   </div>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h3>Bay Area BMR</h3>
+        <p>Free, independent database of deed-restricted affordable rental housing across the Bay Area.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Navigate</h3>
+        <a href="index.html">Search units</a>
+        <a href="tips.html">How to apply</a>
+        <a href="ami.html">AMI calculator</a>
+        <a href="about.html">About</a>
+      </div>
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <a href="mailto:bayareabmr@gmail.com">bayareabmr@gmail.com</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Bay Area BMR. All data sourced via California Public Records Act requests.</span>
+      <span>Data updated every 2 months.</span>
+    </div>
+  </footer>
 
   <script src="data.js"></script>
   <script src="main.js"></script>
