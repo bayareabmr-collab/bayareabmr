@@ -17,6 +17,8 @@ const navLinks = [
 ];
 
 const currentPath = Astro.url.pathname;
+
+import LanguagePicker from '../components/LanguagePicker.astro';
 ---
 
 <!DOCTYPE html>
@@ -59,7 +61,9 @@ const currentPath = Astro.url.pathname;
         </ul>
       </nav>
 
-      <button 
+      <div class="site-header__actions">
+        <LanguagePicker />
+        <button 
         class="mobile-menu-btn" 
         id="mobile-menu-btn" 
         aria-expanded="false" 
@@ -212,6 +216,13 @@ const currentPath = Astro.url.pathname;
       color: var(--color-primary);
       background: var(--color-primary-light);
       font-weight: 600;
+    }
+
+    /* ---- Header Actions (lang picker + mobile menu) ---- */
+    .site-header__actions {
+      display: flex;
+      align-items: center;
+      gap: var(--space-3);
     }
 
     /* ---- Mobile Menu Button ---- */

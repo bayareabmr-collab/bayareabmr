@@ -1,497 +1,155 @@
 ---
 import Base from '../layouts/Base.astro';
+import ListingCard from '../components/ListingCard.astro';
+import FilterBar from '../components/FilterBar.astro';
+import Map from '../components/Map.astro';
 import '../styles/global.css';
 
-// In production, this reads from data/processed/listings.json
-// For now, sample data to prove the UI
 const sampleListings = [
   {
-    id: 1,
-    name: "The Villas at Sunnyvale",
-    address: "123 Innovation Way, Sunnyvale",
-    city: "Sunnyvale",
-    status: "open",
-    deadlineLabel: "Closes Jun 15",
-    ami: [80, 120],
-    units: ["1BR", "2BR", "3BR"],
-    bmrRent: 1890,
-    marketRent: 3450,
+    id: "sunnyvale-villas-001", name: "The Villas at Sunnyvale",
+    address: "123 Innovation Way, Sunnyvale, CA", city: "Sunnyvale", status: "open",
+    applicationClose: "2026-06-15", ami: [80, 120],
+    units: [{ type: "1BR", count: 4, bmrRent: 1890, amiLevel: 80 },{ type: "2BR", count: 2, bmrRent: 2200, amiLevel: 80 },{ type: "3BR", count: 1, bmrRent: 2650, amiLevel: 120 }],
+    coordinates: { lat: 37.3688, lng: -122.0363 },
     amenities: ["Pool", "Gym", "EV Charging", "In-Unit W/D"],
-    walkScore: 82,
-    photoPlaceholder: true,
+    walkScore: 82, bmrRent: 1890, marketRent: 3450, dataSource: "Sunnyvale", lastVerified: "2026-04-01",
   },
   {
-    id: 2,
-    name: "Fremont Station Residences",
-    address: "456 Warm Springs Blvd, Fremont",
-    city: "Fremont",
-    status: "closing",
-    deadlineLabel: "Closes in 5 days",
-    ami: [50, 80],
-    units: ["Studio", "1BR", "2BR"],
-    bmrRent: 1450,
-    marketRent: 2800,
+    id: "fremont-station-002", name: "Fremont Station Residences",
+    address: "456 Warm Springs Blvd, Fremont, CA", city: "Fremont", status: "closing",
+    applicationClose: "2026-04-15", ami: [50, 80],
+    units: [{ type: "Studio", count: 3, bmrRent: 1200, amiLevel: 50 },{ type: "1BR", count: 5, bmrRent: 1450, amiLevel: 80 },{ type: "2BR", count: 2, bmrRent: 1750, amiLevel: 80 }],
+    coordinates: { lat: 37.5168, lng: -121.9465 },
     amenities: ["Gym", "Parking", "Dog Park"],
-    walkScore: 71,
-    photoPlaceholder: true,
+    walkScore: 71, bmrRent: 1200, marketRent: 2800, dataSource: "Fremont", lastVerified: "2026-04-01",
   },
   {
-    id: 3,
-    name: "Miro at Mountain View",
-    address: "789 El Camino Real, Mountain View",
-    city: "Mountain View",
-    status: "upcoming",
-    deadlineLabel: "Opens Jul 1",
-    ami: [60, 100],
-    units: ["1BR", "2BR"],
-    bmrRent: 2100,
-    marketRent: 3800,
+    id: "mountainview-miro-003", name: "Miro at Mountain View",
+    address: "789 El Camino Real, Mountain View, CA", city: "Mountain View", status: "upcoming",
+    applicationClose: "2026-08-01", ami: [60, 100],
+    units: [{ type: "1BR", count: 6, bmrRent: 2100, amiLevel: 100 },{ type: "2BR", count: 3, bmrRent: 2500, amiLevel: 100 }],
+    coordinates: { lat: 37.3861, lng: -122.0839 },
     amenities: ["Rooftop Deck", "Gym", "Package Lockers", "Bike Storage"],
-    walkScore: 89,
-    photoPlaceholder: true,
+    walkScore: 89, bmrRent: 2100, marketRent: 3800, dataSource: "Mountain View", lastVerified: "2026-04-01",
+  },
+  {
+    id: "sanjose-parkside-004", name: "Parkside Towers",
+    address: "200 N 1st St, San Jose, CA", city: "San Jose", status: "open",
+    applicationClose: "2026-07-01", ami: [80, 120],
+    units: [{ type: "Studio", count: 6, bmrRent: 1450, amiLevel: 80 },{ type: "1BR", count: 3, bmrRent: 1790, amiLevel: 120 }],
+    coordinates: { lat: 37.3382, lng: -121.8863 },
+    amenities: ["Pool", "Coworking Space", "EV Charging", "Concierge"],
+    walkScore: 94, bmrRent: 1450, marketRent: 3200, dataSource: "San Jose", lastVerified: "2026-04-01",
+  },
+  {
+    id: "milpitas-transit-005", name: "Milpitas Transit Village",
+    address: "1 S Main St, Milpitas, CA", city: "Milpitas", status: "open",
+    applicationClose: "2026-06-30", ami: [50, 80],
+    units: [{ type: "1BR", count: 8, bmrRent: 1650, amiLevel: 80 },{ type: "2BR", count: 4, bmrRent: 1950, amiLevel: 80 }],
+    coordinates: { lat: 37.4323, lng: -121.8996 },
+    amenities: ["Near BART", "Gym", "Playground", "Package Lockers"],
+    walkScore: 76, bmrRent: 1650, marketRent: 3100, dataSource: "Milpitas", lastVerified: "2026-04-01",
+  },
+  {
+    id: "santaclara-centro-006", name: "Centro Santa Clara",
+    address: "3000 El Camino Real, Santa Clara, CA", city: "Santa Clara", status: "closed",
+    applicationClose: "2026-03-15", ami: [60, 80],
+    units: [{ type: "1BR", count: 4, bmrRent: 1700, amiLevel: 80 },{ type: "2BR", count: 2, bmrRent: 2050, amiLevel: 80 }],
+    coordinates: { lat: 37.3541, lng: -121.9552 },
+    amenities: ["Pool", "BBQ Area", "Fitness Center"],
+    walkScore: 68, bmrRent: 1700, marketRent: 3000, dataSource: "Santa Clara", lastVerified: "2026-03-15",
   },
 ];
 
-const cities = ["All Cities", "San Jose", "Fremont", "Milpitas", "Sunnyvale", "Santa Clara", "Mountain View", "Cupertino", "Palo Alto"];
-
-function savingsPercent(bmr: number, market: number) {
-  return Math.round(((market - bmr) / market) * 100);
-}
+const cities = ["San Jose", "Fremont", "Milpitas", "Sunnyvale", "Santa Clara", "Mountain View", "Cupertino", "Palo Alto"];
 ---
 
 <Base title="Bay Area BMR — Affordable Housing Made Findable">
-  <!-- HERO -->
   <section class="hero">
     <div class="container hero__inner">
       <div class="hero__content animate-in">
         <p class="hero__kicker">Free &middot; Open Source &middot; Updated Bimonthly</p>
-        <h1 class="hero__title">
-          Find your next home<br/>
-          <span class="hero__highlight">at a price you can afford.</span>
-        </h1>
-        <p class="hero__subtitle">
-          Every Below Market Rate housing listing across 8 Bay Area cities — 
-          in one place. Photos, amenities, deadlines, and application links.
-        </p>
-      </div>
-
-      <!-- Search Bar -->
-      <div class="hero__search animate-in animate-in-delay-1">
-        <div class="search-bar">
-          <svg class="search-bar__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
-          </svg>
-          <input 
-            type="search" 
-            class="search-bar__input" 
-            placeholder="Search by property name, address, or city..." 
-            aria-label="Search listings"
-          />
-        </div>
-      </div>
-
-      <!-- Filter Chips -->
-      <div class="hero__filters animate-in animate-in-delay-2">
-        {cities.map((city, i) => (
-          <button class:list={['chip', { 'chip--active': i === 0 }]}>
-            {city}
-          </button>
-        ))}
+        <h1 class="hero__title">Find your next home<br/><span class="hero__highlight">at a price you can afford.</span></h1>
+        <p class="hero__subtitle">Every Below Market Rate housing listing across 8 Bay Area cities — in one place. Photos, amenities, deadlines, and application links.</p>
       </div>
     </div>
     <div class="hero__gradient" aria-hidden="true"></div>
   </section>
 
-  <!-- LISTINGS -->
   <section class="listings-section" aria-label="Available BMR listings">
     <div class="container">
+      <FilterBar cities={cities} listings={sampleListings} />
+      <Map listings={sampleListings} />
       <div class="listings-header">
-        <h2>{sampleListings.length} listings across 8 cities</h2>
-        <div class="listings-sort">
-          <label for="sort-select" class="sr-only">Sort listings</label>
-          <select id="sort-select" class="input" style="width: auto; padding: var(--space-2) var(--space-8) var(--space-2) var(--space-3); font-size: var(--text-sm);">
-            <option>Deadline: Soonest</option>
-            <option>Savings: Highest</option>
-            <option>City: A-Z</option>
-            <option>Date Added</option>
-          </select>
-        </div>
+        <h2><span id="listings-count">{sampleListings.length}</span> listings across 8 cities</h2>
       </div>
-
-      <div class="listings-grid">
+      <div class="listings-grid" id="listings-grid">
         {sampleListings.map((listing, i) => (
-          <article class={`card listing-card animate-in animate-in-delay-${i + 1}`}>
-            <!-- Photo area -->
-            <div class="listing-card__photo">
-              <div class="listing-card__photo-placeholder">
-                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                  <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/>
-                </svg>
-                <span>Photos coming soon</span>
-              </div>
-              <span class={`badge badge--${listing.status} listing-card__badge`}>
-                {listing.status === 'open' ? '● Open' : listing.status === 'closing' ? '⏰ Closing Soon' : '◉ Upcoming'}
-              </span>
-            </div>
-
-            <!-- Content -->
-            <div class="listing-card__body">
-              <div class="listing-card__top">
-                <h3 class="listing-card__name">{listing.name}</h3>
-                <p class="listing-card__address">{listing.address}</p>
-              </div>
-
-              <!-- Pricing -->
-              <div class="listing-card__pricing">
-                <div class="listing-card__bmr-price">
-                  <span class="listing-card__price-label">BMR from</span>
-                  <span class="listing-card__price-value">${listing.bmrRent.toLocaleString()}<span class="listing-card__price-period">/mo</span></span>
-                </div>
-                {listing.marketRent && (
-                  <div class="savings">
-                    <span>Save</span>
-                    <span class="savings__amount">${(listing.marketRent - listing.bmrRent).toLocaleString()}/mo</span>
-                    <span>({savingsPercent(listing.bmrRent, listing.marketRent)}%)</span>
-                  </div>
-                )}
-              </div>
-
-              <!-- Meta row -->
-              <div class="listing-card__meta">
-                <div class="listing-card__units">
-                  {listing.units.map(u => <span class="amenity">{u}</span>)}
-                </div>
-                <div class="listing-card__ami">
-                  <span class="text-sm" style="color: var(--color-text-tertiary);">
-                    {listing.ami[0]}–{listing.ami[1]}% AMI
-                  </span>
-                </div>
-              </div>
-
-              <!-- Amenities -->
-              <div class="listing-card__amenities">
-                {listing.amenities.slice(0, 4).map(a => <span class="amenity">{a}</span>)}
-              </div>
-
-              <!-- Footer -->
-              <div class="listing-card__footer">
-                <div class="listing-card__scores">
-                  {listing.walkScore && (
-                    <span class={`score ${listing.walkScore >= 80 ? 'score--high' : listing.walkScore >= 60 ? 'score--mid' : 'score--low'}`}>
-                      🚶 {listing.walkScore}
-                    </span>
-                  )}
-                </div>
-                <span class="listing-card__deadline">{listing.deadlineLabel}</span>
-              </div>
-
-              <a href="#" class="btn btn--primary listing-card__cta">
-                View Details & Apply →
-              </a>
-            </div>
-          </article>
+          <div class="listing-card-wrap" data-name={listing.name} data-address={listing.address} data-city={listing.city} data-status={listing.status} data-units={listing.units.map(u => u.type).join(',')}>
+            <ListingCard listing={listing} />
+          </div>
         ))}
+      </div>
+      <div id="empty-state" class="empty-state" style="display:none;">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+        <h3>No listings match your filters</h3>
+        <p>Try broadening your search or selecting different filters.</p>
       </div>
     </div>
   </section>
 
-  <!-- VALUE PROP -->
   <section class="value-section">
     <div class="container">
-      <div class="value-header animate-in">
-        <h2>Why Bay Area BMR?</h2>
-        <p>We built the housing search that should already exist.</p>
-      </div>
+      <div class="value-header animate-in"><h2>Why Bay Area BMR?</h2><p>We built the housing search that should already exist.</p></div>
       <div class="value-grid">
-        <div class="value-card animate-in animate-in-delay-1">
-          <div class="value-card__icon">🏘️</div>
-          <h3>8 Cities, One Search</h3>
-          <p>Stop checking 8 different city websites. Every BMR listing from San Jose to Palo Alto, in one place.</p>
-        </div>
-        <div class="value-card animate-in animate-in-delay-2">
-          <div class="value-card__icon">📸</div>
-          <h3>See What You're Getting</h3>
-          <p>Interior photos, amenities, and market-rate comparisons. BMR units are in luxury buildings — we show you that.</p>
-        </div>
-        <div class="value-card animate-in animate-in-delay-3">
-          <div class="value-card__icon">⏰</div>
-          <h3>Never Miss a Deadline</h3>
-          <p>Application windows are short. We track every deadline and will notify you when new listings open in your city.</p>
-        </div>
+        <div class="value-card animate-in" style="animation-delay:80ms"><div class="value-card__icon">🏘️</div><h3>8 Cities, One Search</h3><p>Stop checking 8 different city websites. Every BMR listing from San Jose to Palo Alto, in one place.</p></div>
+        <div class="value-card animate-in" style="animation-delay:160ms"><div class="value-card__icon">📸</div><h3>See What You're Getting</h3><p>Interior photos, amenities, and market-rate comparisons. BMR units are in luxury buildings — we show you that.</p></div>
+        <div class="value-card animate-in" style="animation-delay:240ms"><div class="value-card__icon">⏰</div><h3>Never Miss a Deadline</h3><p>Application windows are short. We track every deadline and will notify you when new listings open in your city.</p></div>
       </div>
     </div>
   </section>
 </Base>
 
 <style>
-  /* ---- Hero ---- */
-  .hero {
-    position: relative;
-    padding: var(--space-16) 0 var(--space-12);
-    overflow: hidden;
-  }
-  .hero__gradient {
-    position: absolute;
-    inset: 0;
-    background: 
-      radial-gradient(ellipse 80% 50% at 50% -20%, var(--color-primary-light) 0%, transparent 60%),
-      radial-gradient(ellipse 40% 40% at 80% 20%, rgba(232, 118, 58, 0.06) 0%, transparent 50%);
-    pointer-events: none;
-    z-index: -1;
-  }
+  .hero { position: relative; padding: var(--space-16) 0 var(--space-12); overflow: hidden; }
+  .hero__gradient { position: absolute; inset: 0; background: radial-gradient(ellipse 80% 50% at 50% -20%, var(--color-primary-light) 0%, transparent 60%), radial-gradient(ellipse 40% 40% at 80% 20%, rgba(232, 118, 58, 0.06) 0%, transparent 50%); pointer-events: none; z-index: -1; }
+  .hero__inner { display: flex; flex-direction: column; align-items: center; text-align: center; gap: var(--space-6); }
+  .hero__kicker { font-size: var(--text-sm); font-weight: 600; color: var(--color-primary); letter-spacing: var(--tracking-wide); text-transform: uppercase; }
+  .hero__title { font-size: var(--text-5xl); max-width: 700px; }
+  .hero__highlight { background: linear-gradient(135deg, var(--color-primary), var(--color-accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+  .hero__subtitle { max-width: 560px; font-size: var(--text-lg); color: var(--color-text-secondary); }
 
-  .hero__inner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: var(--space-8);
-  }
+  .listings-section { padding: var(--space-8) 0 var(--space-16); }
+  .listings-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: var(--space-6); }
+  .listings-header h2 { font-size: var(--text-xl); }
+  .listings-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: var(--space-6); }
 
-  .hero__kicker {
-    font-size: var(--text-sm);
-    font-weight: 600;
-    color: var(--color-primary);
-    letter-spacing: var(--tracking-wide);
-    text-transform: uppercase;
-  }
+  .empty-state { padding: var(--space-16) 0; text-align: center; display: flex; flex-direction: column; align-items: center; gap: var(--space-4); color: var(--color-text-tertiary); }
+  .empty-state h3 { color: var(--color-text-secondary); font-size: var(--text-lg); }
 
-  .hero__title {
-    font-size: var(--text-5xl);
-    max-width: 700px;
-  }
-  .hero__highlight {
-    background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
+  .value-section { padding: var(--space-20) 0; background: var(--color-surface); border-top: 1px solid var(--color-border-light); }
+  .value-header { text-align: center; margin-bottom: var(--space-12); }
+  .value-header p { font-size: var(--text-lg); margin-top: var(--space-3); }
+  .value-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-8); }
+  .value-card { text-align: center; padding: var(--space-8) var(--space-6); }
+  .value-card__icon { font-size: var(--text-4xl); margin-bottom: var(--space-4); }
+  .value-card h3 { margin-bottom: var(--space-3); font-size: var(--text-lg); }
+  .value-card p { font-size: var(--text-sm); line-height: var(--leading-relaxed); }
 
-  .hero__subtitle {
-    max-width: 560px;
-    font-size: var(--text-lg);
-    color: var(--color-text-secondary);
-  }
-
-  /* Search Bar */
-  .hero__search { width: 100%; max-width: 600px; }
-
-  .search-bar {
-    position: relative;
-  }
-  .search-bar__icon {
-    position: absolute;
-    left: var(--space-4);
-    top: 50%;
-    transform: translateY(-50%);
-    color: var(--color-text-tertiary);
-    pointer-events: none;
-  }
-  .search-bar__input {
-    width: 100%;
-    padding: var(--space-4) var(--space-4) var(--space-4) var(--space-12);
-    border: 1.5px solid var(--color-border);
-    border-radius: var(--radius-lg);
-    font-family: var(--font-body);
-    font-size: var(--text-base);
-    background: var(--color-surface);
-    box-shadow: var(--shadow-md);
-    transition: all var(--duration-fast) var(--ease-out);
-  }
-  .search-bar__input:focus {
-    outline: none;
-    border-color: var(--color-primary);
-    box-shadow: var(--shadow-lg), 0 0 0 3px var(--color-primary-glow);
-  }
-  .search-bar__input::placeholder {
-    color: var(--color-text-tertiary);
-  }
-
-  /* Filter Chips */
-  .hero__filters {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: var(--space-2);
-  }
-
-  /* ---- Listings ---- */
-  .listings-section {
-    padding: var(--space-8) 0 var(--space-16);
-  }
-
-  .listings-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: var(--space-8);
-    flex-wrap: wrap;
-    gap: var(--space-4);
-  }
-  .listings-header h2 {
-    font-size: var(--text-xl);
-  }
-
-  .listings-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-    gap: var(--space-6);
-  }
-
-  /* Listing Card */
-  .listing-card__photo {
-    position: relative;
-    aspect-ratio: 16/10;
-    overflow: hidden;
-  }
-  .listing-card__photo-placeholder {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: var(--space-2);
-    background: var(--color-surface-sunken);
-    color: var(--color-text-tertiary);
-    font-size: var(--text-sm);
-  }
-  .listing-card__badge {
-    position: absolute;
-    top: var(--space-3);
-    left: var(--space-3);
-  }
-
-  .listing-card__body {
-    padding: var(--space-5);
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-4);
-  }
-
-  .listing-card__name {
-    font-family: var(--font-display);
-    font-size: var(--text-lg);
-    font-weight: 600;
-  }
-  .listing-card__address {
-    font-size: var(--text-sm);
-    color: var(--color-text-tertiary);
-    margin-top: var(--space-1);
-  }
-
-  .listing-card__pricing {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: var(--space-3);
-  }
-  .listing-card__price-label {
-    font-size: var(--text-xs);
-    color: var(--color-text-tertiary);
-    display: block;
-  }
-  .listing-card__price-value {
-    font-family: var(--font-display);
-    font-size: var(--text-2xl);
-    font-weight: 700;
-    color: var(--color-text);
-  }
-  .listing-card__price-period {
-    font-size: var(--text-sm);
-    font-weight: 400;
-    color: var(--color-text-tertiary);
-  }
-
-  .listing-card__meta {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: var(--space-3);
-  }
-  .listing-card__units {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--space-2);
-  }
-
-  .listing-card__amenities {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--space-2);
-  }
-
-  .listing-card__footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .listing-card__scores {
-    display: flex;
-    gap: var(--space-2);
-  }
-  .listing-card__deadline {
-    font-size: var(--text-sm);
-    font-weight: 600;
-    color: var(--color-text-secondary);
-  }
-
-  .listing-card__cta {
-    width: 100%;
-    text-align: center;
-    text-decoration: none;
-  }
-
-  /* ---- Value Props ---- */
-  .value-section {
-    padding: var(--space-20) 0;
-    background: var(--color-surface);
-    border-top: 1px solid var(--color-border-light);
-  }
-
-  .value-header {
-    text-align: center;
-    margin-bottom: var(--space-12);
-  }
-  .value-header p {
-    font-size: var(--text-lg);
-    margin-top: var(--space-3);
-  }
-
-  .value-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: var(--space-8);
-  }
-
-  .value-card {
-    text-align: center;
-    padding: var(--space-8) var(--space-6);
-  }
-  .value-card__icon {
-    font-size: var(--text-4xl);
-    margin-bottom: var(--space-4);
-  }
-  .value-card h3 {
-    margin-bottom: var(--space-3);
-    font-size: var(--text-lg);
-  }
-  .value-card p {
-    font-size: var(--text-sm);
-    line-height: var(--leading-relaxed);
-  }
-
-  /* ---- Mobile ---- */
-  @media (max-width: 768px) {
-    .hero { padding: var(--space-10) 0 var(--space-8); }
-    .hero__title { font-size: var(--text-3xl); }
-
-    .listings-grid {
-      grid-template-columns: 1fr;
-    }
-  }
-
-  @media (max-width: 480px) {
-    .hero__title { font-size: var(--text-2xl); }
-  }
+  @media (max-width: 768px) { .hero { padding: var(--space-10) 0 var(--space-8); } .hero__title { font-size: var(--text-3xl); } .listings-grid { grid-template-columns: 1fr; } }
+  @media (max-width: 480px) { .hero__title { font-size: var(--text-2xl); } }
 </style>
+
+<script>
+  // Copy data attributes from wrappers to cards for FilterBar filtering
+  document.querySelectorAll('.listing-card-wrap').forEach(wrap => {
+    const card = wrap.querySelector('.listing-card');
+    if (card) {
+      ['name','address','city','status','units'].forEach(attr => {
+        const val = wrap.getAttribute(`data-${attr}`);
+        if (val) (card as HTMLElement).setAttribute(`data-${attr}`, val);
+      });
+    }
+  });
+</script>

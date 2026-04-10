@@ -1,0 +1,227 @@
+---
+interface Props {
+  cities: string[];
+  listings: any[];
+}
+
+const { cities, listings } = Astro.props;
+
+// Extract unique AMI levels and unit types from listings
+const allAmi = [...new Set(listings.flatMap(l => l.ami || []))].sort((a, b) => a - b);
+const allUnitTypes = [...new Set(listings.flatMap(l => 
+  (l.units || []).map((u: any) => u.type).filter(Boolean)
+))].sort();
+---
+
+<div class="filter-bar" id="filter-bar">
+  <!-- Search -->
+  <div class="filter-bar__search">
+    <svg class="filter-bar__search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+      <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+    </svg>
+    <input 
+      type="search" 
+      id="listing-search"
+      class="filter-bar__search-input" 
+      placeholder="Search by name, address, or city..." 
+      aria-label="Search listings"
+    />
+  </div>
+
+  <!-- Filter chips row -->
+  <div class="filter-bar__chips">
+    <!-- City filter -->
+    <div class="filter-group" data-filter="city">
+      <button class="chip chip--active" data-value="all">All Cities</button>
+      {cities.map(city => (
+        <button class="chip" data-value={city}>{city}</button>
+      ))}
+    </div>
+  </div>
+
+  <!-- Secondary filters -->
+  <div class="filter-bar__secondary">
+    <div class="filter-select-group">
+      <label for="filter-status" class="sr-only">Status</label>
+      <select id="filter-status" class="filter-select">
+        <option value="all">Any Status</option>
+        <option value="open">Open</option>
+        <option value="closing">Closing Soon</option>
+        <option value="upcoming">Upcoming</option>
+        <option value="closed">Closed</option>
+      </select>
+    </div>
+
+    {allUnitTypes.length > 0 && (
+      <div class="filter-select-group">
+        <label for="filter-bedrooms" class="sr-only">Bedrooms</label>
+        <select id="filter-bedrooms" class="filter-select">
+          <option value="all">Any Bedrooms</option>
+          {allUnitTypes.map(t => <option value={t}>{t}</option>)}
+        </select>
+      </div>
+    )}
+
+    <div class="filter-select-group">
+      <label for="filter-sort" class="sr-only">Sort by</label>
+      <select id="filter-sort" class="filter-select">
+        <option value="deadline">Deadline: Soonest</option>
+        <option value="savings">Savings: Highest</option>
+        <option value="city">City: A-Z</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+<style>
+  .filter-bar {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+    margin-bottom: var(--space-6);
+  }
+
+  .filter-bar__search {
+    position: relative;
+  }
+  .filter-bar__search-icon {
+    position: absolute;
+    left: var(--space-4);
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--color-text-tertiary);
+    pointer-events: none;
+  }
+  .filter-bar__search-input {
+    width: 100%;
+    padding: var(--space-3) var(--space-4) var(--space-3) var(--space-10);
+    border: 1.5px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    font-family: var(--font-body);
+    font-size: var(--text-base);
+    background: var(--color-surface);
+    box-shadow: var(--shadow-sm);
+    transition: all var(--duration-fast) var(--ease-out);
+  }
+  .filter-bar__search-input:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-md), 0 0 0 3px var(--color-primary-glow);
+  }
+  .filter-bar__search-input::placeholder {
+    color: var(--color-text-tertiary);
+  }
+
+  .filter-bar__chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-bottom: var(--space-1);
+  }
+  .filter-bar__chips::-webkit-scrollbar { display: none; }
+
+  .filter-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+  }
+
+  .filter-bar__secondary {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+  }
+
+  .filter-select {
+    appearance: none;
+    padding: var(--space-2) var(--space-8) var(--space-2) var(--space-3);
+    border: 1.5px solid var(--color-border);
+    border-radius: var(--radius-md);
+    font-family: var(--font-body);
+    font-size: var(--text-sm);
+    font-weight: 500;
+    color: var(--color-text-secondary);
+    background: var(--color-surface);
+    cursor: pointer;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%237a9491' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    transition: border-color var(--duration-fast) var(--ease-out);
+  }
+  .filter-select:hover { border-color: var(--color-primary); }
+  .filter-select:focus {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 1px;
+  }
+
+  @media (max-width: 768px) {
+    .filter-bar__chips { flex-wrap: nowrap; }
+    .filter-bar__secondary { flex-direction: column; }
+    .filter-select { width: 100%; }
+  }
+</style>
+
+<script>
+  // City chip filtering
+  const cityGroup = document.querySelector('[data-filter="city"]');
+  cityGroup?.addEventListener('click', (e) => {
+    const chip = (e.target as HTMLElement).closest('.chip');
+    if (!chip) return;
+    
+    cityGroup.querySelectorAll('.chip').forEach(c => c.classList.remove('chip--active'));
+    chip.classList.add('chip--active');
+    filterListings();
+  });
+
+  // Select filters
+  document.getElementById('filter-status')?.addEventListener('change', filterListings);
+  document.getElementById('filter-bedrooms')?.addEventListener('change', filterListings);
+  document.getElementById('filter-sort')?.addEventListener('change', filterListings);
+
+  // Search
+  let searchTimeout: number;
+  document.getElementById('listing-search')?.addEventListener('input', () => {
+    clearTimeout(searchTimeout);
+    searchTimeout = setTimeout(filterListings, 200) as unknown as number;
+  });
+
+  function filterListings() {
+    const searchVal = (document.getElementById('listing-search') as HTMLInputElement)?.value.toLowerCase() || '';
+    const cityVal = cityGroup?.querySelector('.chip--active')?.getAttribute('data-value') || 'all';
+    const statusVal = (document.getElementById('filter-status') as HTMLSelectElement)?.value || 'all';
+    const bedroomVal = (document.getElementById('filter-bedrooms') as HTMLSelectElement)?.value || 'all';
+    const sortVal = (document.getElementById('filter-sort') as HTMLSelectElement)?.value || 'deadline';
+
+    const cards = document.querySelectorAll('.listing-card') as NodeListOf<HTMLElement>;
+    const container = document.querySelector('.listings-grid');
+    let visibleCount = 0;
+
+    cards.forEach(card => {
+      const name = card.getAttribute('data-name')?.toLowerCase() || '';
+      const address = card.getAttribute('data-address')?.toLowerCase() || '';
+      const city = card.getAttribute('data-city') || '';
+      const status = card.getAttribute('data-status') || '';
+      const unitTypes = card.getAttribute('data-units') || '';
+
+      let show = true;
+      if (searchVal && !name.includes(searchVal) && !address.includes(searchVal) && !city.toLowerCase().includes(searchVal)) show = false;
+      if (cityVal !== 'all' && city !== cityVal) show = false;
+      if (statusVal !== 'all' && status !== statusVal) show = false;
+      if (bedroomVal !== 'all' && !unitTypes.includes(bedroomVal)) show = false;
+
+      card.style.display = show ? '' : 'none';
+      if (show) visibleCount++;
+    });
+
+    // Update count
+    const countEl = document.getElementById('listings-count');
+    if (countEl) countEl.textContent = `${visibleCount}`;
+
+    // Show/hide empty state
+    const emptyState = document.getElementById('empty-state');
+    if (emptyState) emptyState.style.display = visibleCount === 0 ? 'block' : 'none';
+  }
+</script>

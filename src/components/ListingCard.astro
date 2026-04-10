@@ -1,0 +1,230 @@
+---
+interface Props {
+  listing: any;
+  animationDelay?: number;
+}
+
+const { listing, animationDelay = 0 } = Astro.props;
+
+function savingsPercent(bmr: number, market: number) {
+  return Math.round(((market - bmr) / market) * 100);
+}
+
+const lowestBmr = listing.units?.reduce((min: number, u: any) => 
+  u.bmrRent && u.bmrRent < min ? u.bmrRent : min, Infinity) || listing.bmrRent || 0;
+
+const marketRent = listing.enrichment?.marketRent 
+  ? Math.max(...Object.values(listing.enrichment.marketRent) as number[])
+  : listing.marketRent || 0;
+
+const amenities = listing.enrichment?.amenities || listing.amenities || [];
+const walkScore = listing.enrichment?.walkScore || listing.walkScore;
+const photos = listing.enrichment?.photos || [];
+const hasPhoto = photos.length > 0;
+
+const statusMap: Record<string, { label: string; class: string; icon: string }> = {
+  open: { label: 'Open', class: 'badge--open', icon: '●' },
+  closing: { label: 'Closing Soon', class: 'badge--closing', icon: '⏰' },
+  closed: { label: 'Closed', class: 'badge--closed', icon: '○' },
+  upcoming: { label: 'Upcoming', class: 'badge--upcoming', icon: '◉' },
+};
+const status = statusMap[listing.status] || statusMap.open;
+
+const unitTypes = listing.units?.map((u: any) => u.type).filter(Boolean) || listing.unitTypes || [];
+const amiRange = listing.ami?.length ? `${Math.min(...listing.ami)}–${Math.max(...listing.ami)}%` : '';
+---
+
+<article class="card listing-card" style={animationDelay ? `animation-delay: ${animationDelay}ms` : ''}>
+  <a href={`/listing/${listing.id || ''}`} class="listing-card__link">
+    <div class="listing-card__photo">
+      {hasPhoto ? (
+        <img src={photos[0].url} alt={`Photo of ${listing.name}`} class="listing-card__img" loading="lazy" />
+      ) : (
+        <div class="listing-card__photo-placeholder">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/>
+          </svg>
+          <span>Photos coming soon</span>
+        </div>
+      )}
+      <span class={`badge ${status.class} listing-card__badge`}>
+        {status.icon} {status.label}
+      </span>
+    </div>
+
+    <div class="listing-card__body">
+      <div class="listing-card__top">
+        <h3 class="listing-card__name">{listing.name}</h3>
+        <p class="listing-card__address">{listing.address}</p>
+      </div>
+
+      {lowestBmr > 0 && (
+        <div class="listing-card__pricing">
+          <div class="listing-card__bmr-price">
+            <span class="listing-card__price-label">BMR from</span>
+            <span class="listing-card__price-value">
+              ${lowestBmr.toLocaleString()}<span class="listing-card__price-period">/mo</span>
+            </span>
+          </div>
+          {marketRent > 0 && lowestBmr > 0 && (
+            <div class="savings">
+              <span>Save</span>
+              <span class="savings__amount">${(marketRent - lowestBmr).toLocaleString()}/mo</span>
+              <span>({savingsPercent(lowestBmr, marketRent)}%)</span>
+            </div>
+          )}
+        </div>
+      )}
+
+      <div class="listing-card__meta">
+        <div class="listing-card__units">
+          {unitTypes.slice(0, 4).map((u: string) => <span class="amenity">{u}</span>)}
+        </div>
+        {amiRange && (
+          <span class="listing-card__ami">{amiRange} AMI</span>
+        )}
+      </div>
+
+      {amenities.length > 0 && (
+        <div class="listing-card__amenities">
+          {amenities.slice(0, 4).map((a: string) => <span class="amenity">{a}</span>)}
+        </div>
+      )}
+
+      <div class="listing-card__footer">
+        <div class="listing-card__scores">
+          {walkScore && (
+            <span class={`score ${walkScore >= 80 ? 'score--high' : walkScore >= 60 ? 'score--mid' : 'score--low'}`}>
+              🚶 {walkScore}
+            </span>
+          )}
+        </div>
+        {listing.applicationClose && (
+          <span class="listing-card__deadline">Closes {listing.applicationClose}</span>
+        )}
+      </div>
+
+      <span class="btn btn--primary listing-card__cta">View Details & Apply →</span>
+    </div>
+  </a>
+</article>
+
+<style>
+  .listing-card__link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .listing-card__photo {
+    position: relative;
+    aspect-ratio: 16/10;
+    overflow: hidden;
+  }
+  .listing-card__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--duration-normal) var(--ease-out);
+  }
+  .listing-card:hover .listing-card__img {
+    transform: scale(1.03);
+  }
+  .listing-card__photo-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    background: var(--color-surface-sunken);
+    color: var(--color-text-tertiary);
+    font-size: var(--text-sm);
+  }
+  .listing-card__badge {
+    position: absolute;
+    top: var(--space-3);
+    left: var(--space-3);
+  }
+
+  .listing-card__body {
+    padding: var(--space-5);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+  .listing-card__name {
+    font-family: var(--font-display);
+    font-size: var(--text-lg);
+    font-weight: 600;
+  }
+  .listing-card__address {
+    font-size: var(--text-sm);
+    color: var(--color-text-tertiary);
+    margin-top: var(--space-1);
+  }
+
+  .listing-card__pricing {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+  }
+  .listing-card__price-label {
+    font-size: var(--text-xs);
+    color: var(--color-text-tertiary);
+    display: block;
+  }
+  .listing-card__price-value {
+    font-family: var(--font-display);
+    font-size: var(--text-2xl);
+    font-weight: 700;
+    color: var(--color-text);
+  }
+  .listing-card__price-period {
+    font-size: var(--text-sm);
+    font-weight: 400;
+    color: var(--color-text-tertiary);
+  }
+
+  .listing-card__meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-3);
+  }
+  .listing-card__units {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+  }
+  .listing-card__ami {
+    font-size: var(--text-sm);
+    color: var(--color-text-tertiary);
+    white-space: nowrap;
+  }
+  .listing-card__amenities {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+  }
+  .listing-card__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .listing-card__scores {
+    display: flex;
+    gap: var(--space-2);
+  }
+  .listing-card__deadline {
+    font-size: var(--text-sm);
+    font-weight: 600;
+    color: var(--color-text-secondary);
+  }
+  .listing-card__cta {
+    width: 100%;
+    text-align: center;
+  }
+</style>
