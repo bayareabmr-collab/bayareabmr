@@ -304,20 +304,33 @@ function renderUnits() {
 
 /* ── EVENT BINDING ── */
 document.addEventListener('DOMContentLoaded', function () {
-  // Graceful handling if data.js failed to load
+  // Language buttons — always bind regardless of page or data availability
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.addEventListener('click', function () {
+      const map = { EN: 'en', ES: 'es', '中文': 'zh', VI: 'vi' };
+      const lang = map[this.textContent.trim()];
+      if (lang) setLang(lang);
+    });
+  });
+
+  // Mobile menu button — always bind
+  const menuBtn = document.querySelector('.nav-menu-btn');
+  if (menuBtn) menuBtn.addEventListener('click', toggleMobileMenu);
+
+  // Graceful handling if data.js failed to load (search page only)
   if (!Array.isArray(window.SAMPLE_UNITS)) {
     const list = document.getElementById('unit-list');
     if (list) {
       list.innerHTML = '<div class="no-results"><p>Unable to load housing data. Please refresh the page or try again later.</p></div>';
+      console.error('Bay Area BMR: SAMPLE_UNITS not found. Ensure data.js loaded correctly.');
     }
-    console.error('Bay Area BMR: SAMPLE_UNITS not found. Ensure data.js loaded correctly.');
     return;
   }
 
   filtered = [...SAMPLE_UNITS];
   renderUnits();
 
-  // Bind event listeners (replacing inline handlers for separation of concerns)
+  // Bind search/filter event listeners
   const searchInput = document.getElementById('search-input');
   const cityFilter = document.getElementById('city-filter');
   const bedsFilter = document.getElementById('beds-filter');
@@ -332,17 +345,4 @@ document.addEventListener('DOMContentLoaded', function () {
   document.querySelectorAll('.sidebar input[type="checkbox"]').forEach(cb => {
     cb.addEventListener('change', filterUnits);
   });
-
-  // Language buttons
-  document.querySelectorAll('.lang-btn').forEach(btn => {
-    btn.addEventListener('click', function () {
-      const map = { EN: 'en', ES: 'es', '中文': 'zh', VI: 'vi' };
-      const lang = map[this.textContent];
-      if (lang) setLang(lang);
-    });
-  });
-
-  // Mobile menu button
-  const menuBtn = document.querySelector('.nav-menu-btn');
-  if (menuBtn) menuBtn.addEventListener('click', toggleMobileMenu);
 });
