@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Calculate your Area Median Income (AMI) percentage for the Bay Area and find out which affordable housing units you qualify for.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; font-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';">
+  <title>AMI Calculator — Bay Area BMR</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">Bay Area BMR</a>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link">Search</a>
+      <a href="tips.html" class="nav-link">How to apply</a>
+      <a href="ami.html" class="nav-link active">AMI calculator</a>
+      <a href="about.html" class="nav-link">About</a>
+    </div>
+    <button class="nav-menu-btn" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+  </nav>
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <a href="index.html">Search</a>
+    <a href="tips.html">How to apply</a>
+    <a href="ami.html">AMI calculator</a>
+    <a href="about.html">About</a>
+  </div>
+
+  <div class="page-header">
+    <h1>AMI eligibility calculator</h1>
+    <p>Enter your household details to find out which Bay Area BMR income tiers you qualify for.</p>
+  </div>
+
+  <div class="page-content">
+
+    <div class="ami-calc">
+      <h2>Check your eligibility</h2>
+      <p class="subtitle">Based on 2026 HUD income limits for the San Jose-Sunnyvale-Santa Clara and Oakland-Berkeley-Livermore metro areas.</p>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="household-size">Household size</label>
+          <select id="household-size">
+            <option value="1">1 person</option>
+            <option value="2">2 people</option>
+            <option value="3">3 people</option>
+            <option value="4" selected>4 people</option>
+            <option value="5">5 people</option>
+            <option value="6">6 people</option>
+            <option value="7">7 people</option>
+            <option value="8">8 people</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="annual-income">Annual household income</label>
+          <input type="number" id="annual-income" placeholder="e.g. 85000" min="0" max="999999" step="1">
+        </div>
+        <div class="form-group">
+          <label for="county">County</label>
+          <select id="county">
+            <option value="scco">Santa Clara County (SJ/Sunnyvale/Mountain View)</option>
+            <option value="ala">Alameda County (Oakland/Berkeley/Hayward/Fremont)</option>
+            <option value="cc">Contra Costa County (Dublin/Pleasanton/Livermore)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="ami-result" id="ami-result" aria-live="polite">
+        <h3 id="ami-result-title">Your results</h3>
+        <p id="ami-pct-text" style="font-size:15px; color:var(--color-text-secondary); margin-bottom:16px;"></p>
+        <div class="ami-tiers" id="ami-tiers"></div>
+        <p style="font-size:12px; color:var(--color-text-secondary); margin-top:16px;">
+          Limits are estimates based on 2026 HUD data. Actual limits vary by property and may be updated. Always verify eligibility directly with each property.
+        </p>
+        <div style="margin-top:16px;">
+          <a href="index.html" class="btn-outline">Search qualifying units</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="guide-section">
+      <h2>How AMI works</h2>
+      <p>Area Median Income (AMI) is calculated annually by the U.S. Department of Housing and Urban Development (HUD) for each metropolitan area. It represents the middle income for all households in the region — half of households earn more, half earn less.</p>
+      <p>Affordable housing programs use AMI as a benchmark to determine eligibility. Each program sets a maximum income limit as a percentage of AMI — for example, a unit restricted to "low income" households typically requires your income to be at or below 80% of AMI.</p>
+      <h3>Why Bay Area AMI is so high</h3>
+      <p>The Bay Area has one of the highest AMIs in the country because of tech industry wages. This means that even "low income" limits in the Bay Area can seem high compared to national standards — a family of four can earn over $100,000 and still qualify for some affordable housing programs.</p>
+      <div class="callout"><p>AMI limits are recalculated every year. A unit you don't qualify for today might be available next year if limits increase. Check back annually.</p></div>
+    </div>
+
+  </div>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h3>Bay Area BMR</h3>
+        <p>Free, independent database of deed-restricted affordable rental housing across the Bay Area.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Navigate</h3>
+        <a href="index.html">Search units</a>
+        <a href="tips.html">How to apply</a>
+        <a href="ami.html">AMI calculator</a>
+        <a href="about.html">About</a>
+      </div>
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <a href="mailto:bayareabmr@gmail.com">bayareabmr@gmail.com</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Bay Area BMR. All data sourced via California Public Records Act requests.</span>
+      <span>Data updated every 2 months.</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script src="ami-calc.js"></script>
+</body>
+</html>

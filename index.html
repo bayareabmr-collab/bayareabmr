@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Free, comprehensive database of below market rate (BMR) affordable rental housing across 14 Bay Area cities. Search by city, income level, and bedroom count.">
+  <meta property="og:title" content="Bay Area BMR — Find Affordable Housing">
+  <meta property="og:description" content="Free database of deed-restricted BMR rental units across 14 Bay Area cities. Updated every two months via public records requests.">
+  <meta property="og:url" content="https://bayareabmr.org">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://maps.googleapis.com; connect-src 'self'; font-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';">
+  <title>Bay Area BMR — Find Affordable Housing</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <a href="index.html" class="nav-logo" aria-label="Bay Area BMR home">Bay Area BMR</a>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link active">Search</a>
+      <a href="tips.html" class="nav-link">How to apply</a>
+      <a href="ami.html" class="nav-link">AMI calculator</a>
+      <a href="about.html" class="nav-link">About</a>
+    </div>
+    <div class="lang-picker" role="group" aria-label="Language selector">
+      <button class="lang-btn active" aria-pressed="true">EN</button>
+      <button class="lang-btn" aria-pressed="false">ES</button>
+      <button class="lang-btn" aria-pressed="false">中文</button>
+      <button class="lang-btn" aria-pressed="false">VI</button>
+    </div>
+    <button class="nav-menu-btn" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+  </nav>
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <a href="index.html">Search</a>
+    <a href="tips.html">How to apply</a>
+    <a href="ami.html">AMI calculator</a>
+    <a href="about.html">About</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" aria-label="Search">
+    <div class="hero-inner">
+      <h1 id="hero-title">Find below market rate housing in the Bay Area</h1>
+      <p id="hero-sub">Free, comprehensive database of deed-restricted affordable rental units across 14 Bay Area cities. Updated every two months via public records requests.</p>
+      <div class="search-row" role="search">
+        <label for="search-input" class="sr-only">Search units</label>
+        <input type="text" id="search-input" placeholder="Search by city, address, or name..." aria-label="Search by city, address, or name" maxlength="200">
+        <label for="city-filter" class="sr-only">Filter by city</label>
+        <select id="city-filter" aria-label="Filter by city">
+          <option value="">All cities</option>
+          <option>Mountain View</option>
+          <option>Palo Alto</option>
+          <option>Sunnyvale</option>
+          <option>San Jose</option>
+          <option>Santa Clara</option>
+          <option>Milpitas</option>
+          <option>Hayward</option>
+          <option>Alameda</option>
+          <option>Fremont</option>
+          <option>Oakland</option>
+          <option>Berkeley</option>
+          <option>Dublin</option>
+          <option>Livermore</option>
+          <option>Pleasanton</option>
+        </select>
+        <label for="beds-filter" class="sr-only">Filter by bedrooms</label>
+        <select id="beds-filter" aria-label="Filter by bedrooms">
+          <option value="">Any bedrooms</option>
+          <option value="0">Studio</option>
+          <option value="1">1 bedroom</option>
+          <option value="2">2 bedrooms</option>
+          <option value="3">3+ bedrooms</option>
+        </select>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN -->
+  <div class="main-layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" aria-label="Filters">
+      <h2 class="sidebar-heading">Income level</h2>
+      <label class="filter-option"><input type="checkbox" value="vl" checked> Very low (30–50% AMI)</label>
+      <label class="filter-option"><input type="checkbox" value="lo" checked> Low (50–80% AMI)</label>
+      <label class="filter-option"><input type="checkbox" value="mo" checked> Moderate (80–120% AMI)</label>
+      <h2 class="sidebar-heading" style="margin-top:20px">Waitlist status</h2>
+      <label class="filter-option"><input type="checkbox" value="open" checked> Open</label>
+      <label class="filter-option"><input type="checkbox" value="closed" checked> Closed</label>
+      <label class="filter-option"><input type="checkbox" value="unknown" checked> Unknown</label>
+      <div class="ami-link-box">
+        <p>Not sure which income level you qualify for?</p>
+        <a href="ami.html" class="btn-outline">Check AMI calculator</a>
+      </div>
+    </aside>
+
+    <!-- RESULTS -->
+    <main class="results" id="main-content" aria-live="polite">
+      <div class="data-notice" role="note">
+        <span class="notice-icon" aria-hidden="true">i</span>
+        <span>Showing sample data. Live data from 14 cities expected after April 23, 2026 when public records responses arrive.</span>
+      </div>
+      <div class="results-header">
+        <span class="results-count" id="results-count" aria-live="polite">Loading...</span>
+        <label for="sort-select" class="sr-only">Sort results</label>
+        <select id="sort-select" class="sort-select" aria-label="Sort results">
+          <option value="city">Sort by city</option>
+          <option value="income">Sort by income level</option>
+          <option value="waitlist">Sort by waitlist</option>
+          <option value="rent">Sort by rent (low to high)</option>
+        </select>
+      </div>
+      <div id="unit-list" aria-label="Housing listings"></div>
+    </main>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
