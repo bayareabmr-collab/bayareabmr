@@ -1,0 +1,106 @@
+---
+import Base from '../layouts/Base.astro';
+import '../styles/global.css';
+---
+
+<Base title="About — Bay Area BMR" description="How Bay Area BMR works, where our data comes from, and how to get involved.">
+  <section class="page-hero">
+    <div class="container">
+      <h1 class="animate-in">About Bay Area BMR</h1>
+      <p class="page-hero__subtitle animate-in animate-in-delay-1">Free, open-source affordable housing data for the Bay Area. Built with public records, maintained for the public good.</p>
+    </div>
+  </section>
+
+  <section class="page-content">
+    <div class="container container--narrow">
+      <div class="content-block animate-in" id="mission">
+        <h2>The Problem</h2>
+        <p>The Bay Area has thousands of Below Market Rate housing units spread across its cities. But finding them is unreasonably hard. Each city maintains its own system — some post PDFs on municipal websites, others use spreadsheets, a few have no public-facing listing at all. There's no single place to search.</p>
+        <p>BMR units are embedded in luxury apartment complexes with pools, gyms, and modern finishes. But you'd never know that from the way they're listed. The information gap means eligible families miss deadlines, never learn about openings, or don't realize how good these opportunities actually are.</p>
+      </div>
+
+      <div class="content-block animate-in" id="solution">
+        <h2>What We Built</h2>
+        <p>Bay Area BMR aggregates every BMR listing across 8 Bay Area cities into one searchable platform. We show you interior photos, amenities, market-rate comparisons, and application deadlines — the same quality of information you'd see on Zillow, for housing you can actually afford.</p>
+        <p>The site is free. The code is open source. The data comes from California Public Records Act (CPRA) requests submitted directly to each city's housing department on a bimonthly cycle.</p>
+      </div>
+
+      <div class="content-block animate-in" id="data">
+        <h2>Where the Data Comes From</h2>
+        <p>We file formal CPRA requests with the housing departments of San Jose, Fremont, Milpitas, Sunnyvale, Santa Clara, Mountain View, Cupertino, and Palo Alto every two months. Cities are legally required to respond within 10 calendar days.</p>
+        <p>The data we receive includes property names, addresses, income limits, unit counts, bedroom configurations, and application deadlines. We supplement this with publicly available information from property management company websites, Zillow, Apartments.com, and Google Places to add photos, amenities, and market-rate pricing.</p>
+        <p>Every listing shows a "Last Verified" date so you know how current the information is.</p>
+      </div>
+
+      <div class="content-block animate-in" id="cities">
+        <h2>Cities We Cover</h2>
+        <div class="city-grid">
+          {['San Jose', 'Fremont', 'Milpitas', 'Sunnyvale', 'Santa Clara', 'Mountain View', 'Cupertino', 'Palo Alto'].map(city => (
+            <div class="city-card">
+              <span class="city-card__name">{city}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div class="content-block animate-in" id="contact">
+        <h2>Contact</h2>
+        <p>Have a question, correction, or want to help? Reach out:</p>
+        <div class="info-callout">
+          <p><strong>Email:</strong> hello@bayareabmr.org</p>
+          <p><strong>GitHub:</strong> <a href="https://github.com/bayareabmr" target="_blank" rel="noopener">github.com/bayareabmr</a></p>
+        </div>
+      </div>
+
+      <div class="content-block animate-in">
+        <h2>Disclaimer</h2>
+        <p class="text-sm">Bay Area BMR is an independent civic project. We are not affiliated with, endorsed by, or connected to any city government, housing authority, or property management company. While we strive for accuracy, always verify listing details directly with the property or city housing department before applying. Listing availability and eligibility requirements may change without notice.</p>
+      </div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .page-hero {
+    padding: var(--space-16) 0 var(--space-10);
+    background: var(--color-surface);
+    border-bottom: 1px solid var(--color-border-light);
+  }
+  .page-hero__subtitle {
+    font-size: var(--text-lg);
+    color: var(--color-text-secondary);
+    margin-top: var(--space-3);
+    max-width: 600px;
+  }
+
+  .page-content { padding: var(--space-12) 0 var(--space-20); }
+
+  .content-block { margin-bottom: var(--space-10); }
+  .content-block h2 { margin-bottom: var(--space-4); }
+  .content-block p { margin-bottom: var(--space-4); }
+
+  .info-callout {
+    background: var(--color-primary-light);
+    border-left: 4px solid var(--color-primary);
+    padding: var(--space-5) var(--space-6);
+    border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  }
+  .info-callout p { color: var(--color-text); font-size: var(--text-sm); margin-bottom: var(--space-2); }
+
+  .city-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: var(--space-3);
+  }
+  .city-card {
+    padding: var(--space-4) var(--space-5);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border-light);
+    border-radius: var(--radius-md);
+    text-align: center;
+  }
+  .city-card__name {
+    font-weight: 600;
+    font-size: var(--text-sm);
+  }
+</style>

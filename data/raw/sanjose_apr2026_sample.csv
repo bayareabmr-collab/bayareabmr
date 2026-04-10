@@ -1,0 +1,5 @@
+Property Name,Street Address,Income Level,Unit Type,Number of Units,Monthly Rent,AMI %,Application Open Date,Application Deadline,Application Link,Management Company,Contact Phone,Notes
+Villas on the Park,555 S 2nd St San Jose CA 95112,50/80,1BR,4,1850,80,04/01/2026,06/15/2026,https://example.com/apply,Charities Housing,408-555-0100,Lottery-based selection
+Villas on the Park,555 S 2nd St San Jose CA 95112,50/80,2BR,2,2100,80,04/01/2026,06/15/2026,https://example.com/apply,Charities Housing,408-555-0100,Lottery-based selection
+Parkside Towers,200 N 1st St San Jose CA 95113,80/120,Studio,6,1450,80,05/01/2026,07/01/2026,https://example.com/apply2,Prometheus,408-555-0200,First come first served
+Parkside Towers,200 N 1st St San Jose CA 95113,80/120,1BR,3,1790,120,05/01/2026,07/01/2026,https://example.com/apply2,Prometheus,408-555-0200,First come first served

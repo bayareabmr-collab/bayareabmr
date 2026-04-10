@@ -1,0 +1,355 @@
+---
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { 
+  title = 'Bay Area BMR — Affordable Housing Made Findable',
+  description = 'Find Below Market Rate housing across 8 Bay Area cities. Free, searchable, updated bimonthly.'
+} = Astro.props;
+
+const navLinks = [
+  { href: '/', label: 'Listings' },
+  { href: '/tips', label: 'How to Apply' },
+  { href: '/ami', label: 'AMI Calculator' },
+  { href: '/about', label: 'About' },
+];
+
+const currentPath = Astro.url.pathname;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content={description} />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <title>{title}</title>
+  <link rel="sitemap" href="/sitemap-index.xml" />
+</head>
+<body>
+  <!-- Skip to main content for accessibility -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="container site-header__inner">
+      <a href="/" class="site-logo" aria-label="Bay Area BMR Home">
+        <span class="site-logo__icon" aria-hidden="true">⌂</span>
+        <span class="site-logo__text">
+          <span class="site-logo__name">Bay Area BMR</span>
+          <span class="site-logo__tagline">Affordable Housing, Found</span>
+        </span>
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <ul class="site-nav__list" role="list">
+          {navLinks.map(link => (
+            <li>
+              <a 
+                href={link.href} 
+                class:list={['site-nav__link', { 'site-nav__link--active': currentPath === link.href }]}
+                aria-current={currentPath === link.href ? 'page' : undefined}
+              >
+                {link.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+
+      <button 
+        class="mobile-menu-btn" 
+        id="mobile-menu-btn" 
+        aria-expanded="false" 
+        aria-controls="site-nav"
+        aria-label="Open menu"
+      >
+        <span class="mobile-menu-btn__bar"></span>
+        <span class="mobile-menu-btn__bar"></span>
+        <span class="mobile-menu-btn__bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <slot />
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div class="site-footer__brand">
+        <span class="site-logo__icon" aria-hidden="true">⌂</span>
+        <div>
+          <p class="site-footer__name">Bay Area BMR</p>
+          <p class="site-footer__mission">
+            Free, open-source affordable housing data for the Bay Area. 
+            Built with public records. Not affiliated with any government agency.
+          </p>
+        </div>
+      </div>
+      <div class="site-footer__links">
+        <div class="site-footer__col">
+          <h4>Navigate</h4>
+          <ul role="list">
+            {navLinks.map(link => <li><a href={link.href}>{link.label}</a></li>)}
+          </ul>
+        </div>
+        <div class="site-footer__col">
+          <h4>Resources</h4>
+          <ul role="list">
+            <li><a href="https://github.com/bayareabmr" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="/about#data">Data Sources</a></li>
+            <li><a href="/about#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <p>&copy; {new Date().getFullYear()} Bay Area BMR. Open source under MIT License.</p>
+        <p>Data sourced via California Public Records Act (CPRA) requests.</p>
+      </div>
+    </div>
+  </footer>
+
+  <style>
+    /* ---- Skip Link ---- */
+    .skip-link {
+      position: absolute;
+      top: -100%;
+      left: var(--space-4);
+      z-index: 1000;
+      padding: var(--space-3) var(--space-6);
+      background: var(--color-primary);
+      color: white;
+      border-radius: var(--radius-md);
+      font-weight: 600;
+      font-size: var(--text-sm);
+    }
+    .skip-link:focus {
+      top: var(--space-4);
+    }
+
+    /* ---- Header ---- */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--color-border-light);
+    }
+
+    .site-header__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+    }
+
+    /* ---- Logo ---- */
+    .site-logo {
+      display: flex;
+      align-items: center;
+      gap: var(--space-3);
+      color: var(--color-text);
+      text-decoration: none;
+    }
+    .site-logo:hover { color: var(--color-text); }
+
+    .site-logo__icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      background: var(--color-primary);
+      color: white;
+      border-radius: var(--radius-md);
+      font-size: var(--text-lg);
+      line-height: 1;
+    }
+
+    .site-logo__name {
+      display: block;
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: var(--text-lg);
+      line-height: 1.1;
+      letter-spacing: var(--tracking-tight);
+    }
+
+    .site-logo__tagline {
+      display: block;
+      font-size: var(--text-xs);
+      color: var(--color-text-tertiary);
+      font-weight: 400;
+      letter-spacing: var(--tracking-wide);
+    }
+
+    /* ---- Desktop Nav ---- */
+    .site-nav__list {
+      display: flex;
+      gap: var(--space-1);
+      list-style: none;
+    }
+
+    .site-nav__link {
+      display: block;
+      padding: var(--space-2) var(--space-4);
+      border-radius: var(--radius-md);
+      font-size: var(--text-sm);
+      font-weight: 500;
+      color: var(--color-text-secondary);
+      transition: all var(--duration-fast) var(--ease-out);
+    }
+    .site-nav__link:hover {
+      color: var(--color-primary);
+      background: var(--color-primary-light);
+    }
+    .site-nav__link--active {
+      color: var(--color-primary);
+      background: var(--color-primary-light);
+      font-weight: 600;
+    }
+
+    /* ---- Mobile Menu Button ---- */
+    .mobile-menu-btn {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      padding: var(--space-2);
+    }
+    .mobile-menu-btn__bar {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: var(--color-text);
+      border-radius: 2px;
+      transition: all var(--duration-fast) var(--ease-out);
+    }
+
+    /* ---- Footer ---- */
+    .site-footer {
+      margin-top: var(--space-24);
+      background: var(--color-text);
+      color: rgba(255, 255, 255, 0.7);
+      padding: var(--space-16) 0 var(--space-8);
+    }
+
+    .site-footer__inner {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-12);
+    }
+
+    .site-footer__brand {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-4);
+    }
+    .site-footer__brand .site-logo__icon {
+      flex-shrink: 0;
+    }
+
+    .site-footer__name {
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: var(--text-xl);
+      color: white;
+      margin-bottom: var(--space-2);
+    }
+    .site-footer__mission {
+      max-width: 400px;
+      font-size: var(--text-sm);
+      line-height: var(--leading-relaxed);
+    }
+
+    .site-footer__links {
+      display: flex;
+      gap: var(--space-16);
+    }
+    .site-footer__col h4 {
+      font-family: var(--font-body);
+      font-size: var(--text-xs);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: var(--tracking-wide);
+      color: rgba(255,255,255,0.4);
+      margin-bottom: var(--space-4);
+    }
+    .site-footer__col ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+    }
+    .site-footer__col a {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: var(--text-sm);
+    }
+    .site-footer__col a:hover { color: white; }
+
+    .site-footer__bottom {
+      padding-top: var(--space-8);
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      font-size: var(--text-xs);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-1);
+    }
+
+    /* ---- Mobile ---- */
+    @media (max-width: 768px) {
+      .mobile-menu-btn { display: flex; }
+
+      .site-nav {
+        display: none;
+        position: absolute;
+        top: 64px;
+        left: 0;
+        right: 0;
+        background: var(--color-surface);
+        border-bottom: 1px solid var(--color-border);
+        box-shadow: var(--shadow-lg);
+        padding: var(--space-4);
+      }
+      .site-nav.is-open { display: block; }
+
+      .site-nav__list {
+        flex-direction: column;
+        gap: var(--space-1);
+      }
+      .site-nav__link {
+        padding: var(--space-3) var(--space-4);
+        font-size: var(--text-base);
+      }
+
+      .site-footer__links {
+        flex-direction: column;
+        gap: var(--space-8);
+      }
+    }
+  </style>
+
+  <script>
+    const btn = document.getElementById('mobile-menu-btn');
+    const nav = document.getElementById('site-nav');
+
+    btn?.addEventListener('click', () => {
+      const isOpen = nav?.classList.toggle('is-open');
+      btn.setAttribute('aria-expanded', String(isOpen));
+      btn.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+    });
+
+    // Close on outside click
+    document.addEventListener('click', (e) => {
+      if (!nav?.contains(e.target as Node) && !btn?.contains(e.target as Node)) {
+        nav?.classList.remove('is-open');
+        btn?.setAttribute('aria-expanded', 'false');
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "city": "San Jose",
+  "slug": "sanjose",
+  "columnMap": {
+    "Property Name": "name",
+    "Street Address": "address",
+    "Income Level": "ami",
+    "Unit Type": "units.type",
+    "Number of Units": "units.count",
+    "Monthly Rent": "units.bmrRent",
+    "AMI %": "units.amiLevel",
+    "Application Open Date": "applicationOpen",
+    "Application Deadline": "applicationClose",
+    "Application Link": "applicationUrl",
+    "Management Company": "propertyManagement.company",
+    "Contact Phone": "propertyManagement.phone",
+    "Notes": "notes"
+  },
+  "dateFormat": "MM/DD/YYYY"
+}

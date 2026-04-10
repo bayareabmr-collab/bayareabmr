@@ -1,0 +1,66 @@
+[
+  {
+    "city": "San Jose",
+    "dataSource": "San Jose",
+    "sourceFormat": "auto",
+    "lastVerified": "2026-04-10",
+    "status": "open",
+    "ami": [
+      50,
+      80
+    ],
+    "units": [
+      {
+        "type": "2BR",
+        "count": 2,
+        "bmrRent": 2100,
+        "amiLevel": 80
+      }
+    ],
+    "name": "Villas on the Park",
+    "address": "555 S 2nd St San Jose CA 95112",
+    "applicationOpen": "2026-04-01",
+    "applicationClose": "2026-06-15",
+    "applicationUrl": "https://example.com/apply",
+    "propertyManagement.company": "Charities Housing",
+    "propertyManagement.phone": "408-555-0100",
+    "notes": "Lottery-based selection",
+    "id": "sanjose-villasonthepark-mnte2ipq",
+    "enrichment": {
+      "lastEnriched": "2026-04-10",
+      "sources": []
+    }
+  },
+  {
+    "city": "San Jose",
+    "dataSource": "San Jose",
+    "sourceFormat": "auto",
+    "lastVerified": "2026-04-10",
+    "status": "open",
+    "ami": [
+      80,
+      120
+    ],
+    "units": [
+      {
+        "type": "1BR",
+        "count": 3,
+        "bmrRent": 1790,
+        "amiLevel": 120
+      }
+    ],
+    "name": "Parkside Towers",
+    "address": "200 N 1st St San Jose CA 95113",
+    "applicationOpen": "2026-05-01",
+    "applicationClose": "2026-07-01",
+    "applicationUrl": "https://example.com/apply2",
+    "propertyManagement.company": "Prometheus",
+    "propertyManagement.phone": "408-555-0200",
+    "notes": "First come first served",
+    "id": "sanjose-parksidetowers-mnte2ipq",
+    "enrichment": {
+      "lastEnriched": "2026-04-10",
+      "sources": []
+    }
+  }
+]

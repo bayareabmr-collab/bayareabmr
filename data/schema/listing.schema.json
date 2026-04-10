@@ -1,0 +1,97 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Bay Area BMR Listing",
+  "type": "object",
+  "required": ["id", "name", "address", "city", "status", "ami", "units", "dataSource", "lastVerified"],
+  "properties": {
+    "id": { "type": "string", "description": "Unique identifier (city-slug + incremental)" },
+    "name": { "type": "string", "description": "Property name as listed by the city" },
+    "address": { "type": "string", "description": "Full street address" },
+    "city": { "type": "string", "enum": ["San Jose", "Fremont", "Milpitas", "Sunnyvale", "Santa Clara", "Mountain View", "Cupertino", "Palo Alto"] },
+    "coordinates": {
+      "type": "object",
+      "properties": {
+        "lat": { "type": "number", "minimum": 37.0, "maximum": 37.9 },
+        "lng": { "type": "number", "minimum": -122.5, "maximum": -121.5 }
+      }
+    },
+    "status": { "type": "string", "enum": ["open", "closing", "closed", "upcoming"] },
+    "ami": {
+      "type": "array",
+      "items": { "type": "number" },
+      "description": "AMI levels served, e.g. [50, 80, 120]"
+    },
+    "units": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": { "type": "string", "description": "Studio, 1BR, 2BR, 3BR, etc." },
+          "count": { "type": "integer" },
+          "bmrRent": { "type": "number" },
+          "amiLevel": { "type": "number" }
+        }
+      }
+    },
+    "applicationOpen": { "type": "string", "format": "date", "description": "ISO date" },
+    "applicationClose": { "type": "string", "format": "date", "description": "ISO date" },
+    "applicationUrl": { "type": "string", "format": "uri" },
+    "propertyManagement": {
+      "type": "object",
+      "properties": {
+        "company": { "type": "string" },
+        "phone": { "type": "string" },
+        "email": { "type": "string" },
+        "website": { "type": "string", "format": "uri" }
+      }
+    },
+    "dataSource": { "type": "string", "description": "Which city provided this data" },
+    "sourceFormat": { "type": "string", "description": "CSV, XLSX, PDF, JSON, manual" },
+    "lastVerified": { "type": "string", "format": "date" },
+    "notes": { "type": "string" },
+
+    "enrichment": {
+      "type": "object",
+      "description": "Data from external sources — separate from authoritative CPRA data",
+      "properties": {
+        "photos": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "url": { "type": "string", "format": "uri" },
+              "caption": { "type": "string" },
+              "source": { "type": "string" }
+            }
+          }
+        },
+        "marketRent": {
+          "type": "object",
+          "description": "Market rate rents by unit type for savings comparison",
+          "additionalProperties": { "type": "number" }
+        },
+        "amenities": { "type": "array", "items": { "type": "string" } },
+        "yearBuilt": { "type": "integer" },
+        "sqft": {
+          "type": "object",
+          "additionalProperties": { "type": "number" }
+        },
+        "walkScore": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "transitScore": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "bikeScore": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "petPolicy": { "type": "string" },
+        "buildingDescription": { "type": "string" },
+        "nearby": {
+          "type": "object",
+          "properties": {
+            "schools": { "type": "array", "items": { "type": "string" } },
+            "transit": { "type": "array", "items": { "type": "string" } },
+            "grocery": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+        "lastEnriched": { "type": "string", "format": "date" },
+        "sources": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  }
+}

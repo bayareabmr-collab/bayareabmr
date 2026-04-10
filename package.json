@@ -1,0 +1,25 @@
+{
+  "name": "bayareabmr",
+  "version": "0.1.0",
+  "description": "Free Bay Area Below Market Rate housing aggregator",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "validate": "node scripts/validate.js",
+    "ingest": "node scripts/ingest.js",
+    "enrich": "node scripts/enrich.js"
+  },
+  "keywords": ["housing", "affordable", "bay-area", "bmr", "civic-tech"],
+  "author": "Bay Area BMR",
+  "license": "MIT",
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.2",
+    "ajv": "^8.18.0",
+    "ajv-formats": "^3.0.1",
+    "astro": "^6.1.5",
+    "csv-parse": "^6.2.1",
+    "xlsx": "^0.18.5"
+  }
+}
