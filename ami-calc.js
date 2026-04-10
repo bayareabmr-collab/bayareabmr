@@ -85,7 +85,7 @@
       const qualifies = income <= limit;
       return `
         <div class="ami-tier ${qualifies ? 'qualify' : 'not-qualify'}">
-          <h4 style="color:${qualifies ? t.textColor : 'var(--color-text-secondary)'};">${t.label}</h4>
+          <h4 style="color:${qualifies ? t.textColor : 'var(--color-text-secondary)'};">${typeof escHtml === 'function' ? escHtml(t.label) : t.label}</h4>
           <p>Up to ${formatMoney(limit)}/year</p>
           <p>Up to ${Math.round(t.pct * 100)}% AMI</p>
           ${qualifies ? '<span class="qualify-badge">You qualify</span>' : ''}
