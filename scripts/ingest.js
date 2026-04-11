@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+require('dotenv').config();
 /**
  * ingest.js — Bay Area BMR Data Ingestion Pipeline
  *

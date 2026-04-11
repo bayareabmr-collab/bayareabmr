@@ -27,13 +27,12 @@ import LanguagePicker from '../components/LanguagePicker.astro';
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content={description} />
-  <meta name="google-site-verification" content="mh6l0YGh5nMW7b2BrRXmTk_-VxQIi8NFd359sjUGvKg" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <title>{title}</title>
   <link rel="sitemap" href="/sitemap-index.xml" />
   <!-- Umami Analytics — privacy-respecting, no cookies, GDPR compliant -->
   <!-- Sign up free at https://cloud.umami.is — replace WEBSITE_ID below -->
-  <script defer src="https://cloud.umami.is/script.js" data-website-id="6cd57fa2-3a8c-4ef4-9842-6e7d60fcceeb"></script>
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="WEBSITE_ID"></script>
 </head>
 <body>
   <!-- Skip to main content for accessibility -->
@@ -45,23 +44,16 @@ import LanguagePicker from '../components/LanguagePicker.astro';
         <span class="site-logo__icon" aria-hidden="true">⌂</span>
         <span class="site-logo__text">
           <span class="site-logo__name">Bay Area BMR</span>
-          <span class="site-logo__tagline">Affordable Housing, Found</span>
+          <span class="site-logo__tagline" data-i18n="site.tagline">Affordable Housing, Found</span>
         </span>
       </a>
 
       <nav class="site-nav" id="site-nav" aria-label="Main navigation">
         <ul class="site-nav__list" role="list">
-          {navLinks.map(link => (
-            <li>
-              <a 
-                href={link.href} 
-                class:list={['site-nav__link', { 'site-nav__link--active': currentPath === link.href }]}
-                aria-current={currentPath === link.href ? 'page' : undefined}
-              >
-                {link.label}
-              </a>
-            </li>
-          ))}
+          <li><a href="/" class:list={['site-nav__link', { 'site-nav__link--active': currentPath === '/' }]} data-i18n="nav.listings">Listings</a></li>
+          <li><a href="/tips" class:list={['site-nav__link', { 'site-nav__link--active': currentPath === '/tips' }]} data-i18n="nav.tips">How to Apply</a></li>
+          <li><a href="/ami" class:list={['site-nav__link', { 'site-nav__link--active': currentPath === '/ami' }]} data-i18n="nav.ami">AMI Calculator</a></li>
+          <li><a href="/about" class:list={['site-nav__link', { 'site-nav__link--active': currentPath === '/about' }]} data-i18n="nav.about">About</a></li>
         </ul>
       </nav>
 
@@ -91,7 +83,7 @@ import LanguagePicker from '../components/LanguagePicker.astro';
         <span class="site-logo__icon" aria-hidden="true">⌂</span>
         <div>
           <p class="site-footer__name">Bay Area BMR</p>
-          <p class="site-footer__mission">
+          <p class="site-footer__mission" data-i18n="footer.mission">
             Free, open-source affordable housing data for the Bay Area. 
             Built with public records. Not affiliated with any government agency.
           </p>
@@ -99,23 +91,26 @@ import LanguagePicker from '../components/LanguagePicker.astro';
       </div>
       <div class="site-footer__links">
         <div class="site-footer__col">
-          <h4>Navigate</h4>
+          <h4 data-i18n="footer.navigate">Navigate</h4>
           <ul role="list">
-            {navLinks.map(link => <li><a href={link.href}>{link.label}</a></li>)}
+            <li><a href="/" data-i18n="nav.listings">Listings</a></li>
+            <li><a href="/tips" data-i18n="nav.tips">How to Apply</a></li>
+            <li><a href="/ami" data-i18n="nav.ami">AMI Calculator</a></li>
+            <li><a href="/about" data-i18n="nav.about">About</a></li>
           </ul>
         </div>
         <div class="site-footer__col">
-          <h4>Resources</h4>
+          <h4 data-i18n="footer.resources">Resources</h4>
           <ul role="list">
-            <li><a href="https://github.com/bayareabmr" target="_blank" rel="noopener">GitHub</a></li>
-            <li><a href="/about#data">Data Sources</a></li>
-            <li><a href="/about#contact">Contact</a></li>
+            <li><a href="https://github.com/bayareabmr" target="_blank" rel="noopener" data-i18n="footer.github">GitHub</a></li>
+            <li><a href="/about#data" data-i18n="footer.dataSources">Data Sources</a></li>
+            <li><a href="/about#contact" data-i18n="footer.contact">Contact</a></li>
           </ul>
         </div>
       </div>
       <div class="site-footer__bottom">
-        <p>&copy; {new Date().getFullYear()} Bay Area BMR. Open source under MIT License.</p>
-        <p>Data sourced via California Public Records Act (CPRA) requests.</p>
+        <p>&copy; {new Date().getFullYear()} <span data-i18n="footer.copyright">Bay Area BMR. Open source under MIT License.</span></p>
+        <p data-i18n="footer.cpra">Data sourced via California Public Records Act (CPRA) requests.</p>
       </div>
     </div>
   </footer>
@@ -378,6 +373,48 @@ import LanguagePicker from '../components/LanguagePicker.astro';
         btn?.setAttribute('aria-expanded', 'false');
       }
     });
+
+    // ── Translation Engine ──────────────────────────────────────────
+    // Reads language from localStorage, loads the matching JSON file,
+    // and replaces textContent of all elements with data-i18n attributes.
+    (async function applyTranslations() {
+      const supported = ['en','es','zh','vi','tl','hi','ko','ja','fa','pa'];
+      const stored = localStorage.getItem('bmr-lang');
+      const browser = navigator.language?.slice(0, 2);
+      const lang = stored && supported.includes(stored) ? stored : 
+                   (browser && supported.includes(browser) ? browser : 'en');
+
+      // Don't fetch if English — that's the default already in the HTML
+      if (lang === 'en') return;
+
+      // Set RTL for Persian
+      if (lang === 'fa') {
+        document.documentElement.dir = 'rtl';
+      }
+      document.documentElement.lang = lang;
+
+      try {
+        // Fetch the translation file
+        const res = await fetch(`/i18n/${lang}.json`);
+        if (!res.ok) return;
+        const translations = await res.json();
+
+        // Replace all elements with data-i18n attribute
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+          const key = el.getAttribute('data-i18n');
+          if (key && translations[key]) {
+            // For inputs, set placeholder. For everything else, set textContent.
+            if (el instanceof HTMLInputElement && el.placeholder) {
+              el.placeholder = translations[key];
+            } else {
+              el.textContent = translations[key];
+            }
+          }
+        });
+      } catch (e) {
+        // Silently fail — English stays as fallback
+      }
+    })();
   </script>
 </body>
 </html>
