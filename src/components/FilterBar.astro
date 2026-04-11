@@ -116,12 +116,8 @@ const allUnitTypes = [...new Set(listings.flatMap(l =>
     display: flex;
     flex-wrap: wrap;
     gap: var(--space-2);
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
     padding-bottom: var(--space-1);
   }
-  .filter-bar__chips::-webkit-scrollbar { display: none; }
 
   .filter-group {
     display: flex;
@@ -158,9 +154,15 @@ const allUnitTypes = [...new Set(listings.flatMap(l =>
   }
 
   @media (max-width: 768px) {
-    .filter-bar__chips { flex-wrap: nowrap; }
-    .filter-bar__secondary { flex-direction: column; }
-    .filter-select { width: 100%; }
+    .filter-bar__search-input {
+      font-size: 16px; /* prevents iOS zoom on focus */
+    }
+    .filter-bar__secondary {
+      flex-direction: column;
+    }
+    .filter-select {
+      width: 100%;
+    }
   }
 </style>
 

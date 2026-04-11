@@ -1,6 +1,4 @@
 ---
-// LanguagePicker renders server-side as a <select> with all languages.
-// Client-side JS handles switching.
 const langs = [
   { code: 'en', native: 'English' },
   { code: 'es', native: 'Español' },
@@ -17,76 +15,104 @@ const langs = [
 
 <div class="lang-picker">
   <label for="lang-select" class="sr-only">Language</label>
-  <svg class="lang-picker__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-    <circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
-  </svg>
-  <select id="lang-select" class="lang-picker__select">
-    {langs.map(l => (
-      <option value={l.code}>{l.native}</option>
-    ))}
-  </select>
+  <div class="lang-picker__wrapper">
+    <span class="lang-picker__globe" aria-hidden="true">🌐</span>
+    <select id="lang-select" class="lang-picker__select">
+      {langs.map(l => (
+        <option value={l.code}>{l.native}</option>
+      ))}
+    </select>
+    <span class="lang-picker__arrow" aria-hidden="true">▾</span>
+  </div>
 </div>
 
 <style>
   .lang-picker {
     position: relative;
+  }
+  .lang-picker__wrapper {
     display: flex;
     align-items: center;
-    gap: var(--space-1);
+    position: relative;
+    background: var(--color-surface-sunken);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
   }
-  .lang-picker__icon {
+  .lang-picker__globe {
     position: absolute;
-    left: var(--space-2);
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    line-height: 1;
     pointer-events: none;
+    z-index: 1;
+  }
+  .lang-picker__arrow {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 10px;
     color: var(--color-text-tertiary);
+    pointer-events: none;
+    z-index: 1;
   }
   .lang-picker__select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
     appearance: none;
-    background: var(--color-surface-sunken);
-    border: 1px solid var(--color-border-light);
-    border-radius: var(--radius-md);
-    padding: var(--space-1) var(--space-6) var(--space-1) var(--space-7);
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 6px 24px 6px 28px;
     font-family: var(--font-body);
-    font-size: var(--text-xs);
+    font-size: 12px;
     font-weight: 500;
     color: var(--color-text-secondary);
     cursor: pointer;
-    transition: border-color var(--duration-fast) var(--ease-out);
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%237a9491' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: right 6px center;
-  }
-  .lang-picker__select:hover {
-    border-color: var(--color-primary);
+    min-width: 0;
+    width: auto;
+    line-height: 1.4;
   }
   .lang-picker__select:focus {
-    outline: 2px solid var(--color-primary);
-    outline-offset: 1px;
+    outline: none;
+  }
+  .lang-picker__wrapper:focus-within {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 2px var(--color-primary-glow);
+  }
+
+  @media (max-width: 768px) {
+    .lang-picker__select {
+      font-size: 11px;
+      padding: 5px 20px 5px 24px;
+    }
+    .lang-picker__globe {
+      font-size: 12px;
+      left: 6px;
+    }
+    .lang-picker__arrow {
+      right: 6px;
+    }
   }
 </style>
 
 <script>
   const select = document.getElementById('lang-select') as HTMLSelectElement;
-  
-  // Set initial value from localStorage or browser
-  const stored = localStorage.getItem('bmr-lang');
-  const browser = navigator.language?.slice(0, 2);
-  const current = stored || (['en','es','zh','vi','tl','hi','ko','ja','fa','pa'].includes(browser || '') ? browser : 'en');
-  if (select) select.value = current || 'en';
+  if (select) {
+    const stored = localStorage.getItem('bmr-lang');
+    const browser = navigator.language?.slice(0, 2);
+    const supported = ['en','es','zh','vi','tl','hi','ko','ja','fa','pa'];
+    const current = stored && supported.includes(stored) ? stored : (browser && supported.includes(browser) ? browser : 'en');
+    select.value = current;
 
-  select?.addEventListener('change', () => {
-    localStorage.setItem('bmr-lang', select.value);
-    // Set html lang and dir attributes
-    document.documentElement.lang = select.value;
-    if (select.value === 'fa') {
-      document.documentElement.dir = 'rtl';
-    } else {
-      document.documentElement.dir = 'ltr';
-    }
-    // Dispatch custom event for other components to react to
-    window.dispatchEvent(new CustomEvent('langchange', { detail: { lang: select.value } }));
-    // For static site, reload to get server-rendered content in new lang
-    // In future, client-side translation swapping can avoid reload
-    window.location.reload();
-  });
+    select.addEventListener('change', () => {
+      localStorage.setItem('bmr-lang', select.value);
+      document.documentElement.lang = select.value;
+      document.documentElement.dir = select.value === 'fa' ? 'rtl' : 'ltr';
+      window.location.reload();
+    });
+  }
 </script>

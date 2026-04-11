@@ -30,6 +30,9 @@ import LanguagePicker from '../components/LanguagePicker.astro';
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <title>{title}</title>
   <link rel="sitemap" href="/sitemap-index.xml" />
+  <!-- Umami Analytics — privacy-respecting, no cookies, GDPR compliant -->
+  <!-- Sign up free at https://cloud.umami.is — replace WEBSITE_ID below -->
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="WEBSITE_ID"></script>
 </head>
 <body>
   <!-- Skip to main content for accessibility -->
@@ -150,6 +153,7 @@ import LanguagePicker from '../components/LanguagePicker.astro';
       align-items: center;
       justify-content: space-between;
       height: 64px;
+      gap: var(--space-4);
     }
 
     /* ---- Logo ---- */
@@ -315,6 +319,8 @@ import LanguagePicker from '../components/LanguagePicker.astro';
     @media (max-width: 768px) {
       .mobile-menu-btn { display: flex; }
 
+      .site-logo__tagline { display: none; }
+
       .site-nav {
         display: none;
         position: absolute;
@@ -325,6 +331,7 @@ import LanguagePicker from '../components/LanguagePicker.astro';
         border-bottom: 1px solid var(--color-border);
         box-shadow: var(--shadow-lg);
         padding: var(--space-4);
+        z-index: 200;
       }
       .site-nav.is-open { display: block; }
 
@@ -341,6 +348,15 @@ import LanguagePicker from '../components/LanguagePicker.astro';
         flex-direction: column;
         gap: var(--space-8);
       }
+
+      .site-footer {
+        padding: var(--space-10) 0 var(--space-6);
+      }
+    }
+
+    @media (max-width: 380px) {
+      .site-logo__name { font-size: var(--text-base); }
+      .site-logo__icon { width: 30px; height: 30px; font-size: var(--text-sm); }
     }
   </style>
 

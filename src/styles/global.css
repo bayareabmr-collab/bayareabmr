@@ -112,6 +112,7 @@ html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 body {
@@ -121,6 +122,8 @@ body {
   color: var(--color-text);
   background-color: var(--color-backdrop);
   min-height: 100vh;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 img, video, svg {
@@ -178,6 +181,7 @@ p {
   max-width: var(--max-width);
   margin-inline: auto;
   padding-inline: var(--gutter);
+  box-sizing: border-box;
 }
 
 .container--narrow {
