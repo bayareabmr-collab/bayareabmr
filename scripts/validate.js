@@ -29,7 +29,7 @@ const BAY_AREA_BOUNDS = {
 
 const VALID_CITIES = [
   'San Jose', 'Fremont', 'Milpitas', 'Sunnyvale',
-  'Santa Clara', 'Mountain View', 'Cupertino', 'Palo Alto',
+  'Santa Clara', 'Mountain View', 'Cupertino', 'Palo Alto', 'Oakland',
 ];
 
 function main() {
