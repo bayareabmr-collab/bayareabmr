@@ -7,7 +7,7 @@
     "id": { "type": "string", "description": "Unique identifier (city-slug + incremental)" },
     "name": { "type": "string", "description": "Property name as listed by the city" },
     "address": { "type": "string", "description": "Full street address" },
-    "city": { "type": "string", "enum": ["San Jose", "Fremont", "Milpitas", "Sunnyvale", "Santa Clara", "Mountain View", "Cupertino", "Palo Alto", "Oakland"] },
+    "city": { "type": "string", "enum": ["San Jose", "Fremont", "Milpitas", "Sunnyvale", "Santa Clara", "Mountain View", "Cupertino", "Palo Alto"] },
     "coordinates": {
       "type": "object",
       "properties": {
