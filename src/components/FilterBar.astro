@@ -33,7 +33,7 @@ const allUnitTypes = [...new Set(listings.flatMap(l =>
   <div class="filter-bar__chips">
     <!-- City filter -->
     <div class="filter-group" data-filter="city">
-      <button class="chip chip--active" data-value="all">All Cities</button>
+      <button class="chip chip--active" data-value="all" data-i18n="filter.all">All Cities</button>
       {cities.map(city => (
         <button class="chip" data-value={city}>{city}</button>
       ))}
@@ -45,11 +45,11 @@ const allUnitTypes = [...new Set(listings.flatMap(l =>
     <div class="filter-select-group">
       <label for="filter-status" class="sr-only">Status</label>
       <select id="filter-status" class="filter-select">
-        <option value="all">Any Status</option>
-        <option value="open">Open</option>
-        <option value="closing">Closing Soon</option>
-        <option value="upcoming">Upcoming</option>
-        <option value="closed">Closed</option>
+        <option value="all" data-i18n="filter.anyStatus">Any Status</option>
+        <option value="open" data-i18n="filter.open">Open</option>
+        <option value="closing" data-i18n="filter.closingSoon">Closing Soon</option>
+        <option value="upcoming" data-i18n="filter.upcoming">Upcoming</option>
+        <option value="closed" data-i18n="filter.closed">Closed</option>
       </select>
     </div>
 
@@ -57,7 +57,7 @@ const allUnitTypes = [...new Set(listings.flatMap(l =>
       <div class="filter-select-group">
         <label for="filter-bedrooms" class="sr-only">Bedrooms</label>
         <select id="filter-bedrooms" class="filter-select">
-          <option value="all">Any Bedrooms</option>
+          <option value="all" data-i18n="filter.anyBedrooms">Any Bedrooms</option>
           {allUnitTypes.map(t => <option value={t}>{t}</option>)}
         </select>
       </div>
@@ -66,9 +66,9 @@ const allUnitTypes = [...new Set(listings.flatMap(l =>
     <div class="filter-select-group">
       <label for="filter-sort" class="sr-only">Sort by</label>
       <select id="filter-sort" class="filter-select">
-        <option value="deadline">Deadline: Soonest</option>
-        <option value="savings">Savings: Highest</option>
-        <option value="city">City: A-Z</option>
+        <option value="deadline" data-i18n="filter.sort.deadline">Deadline: Soonest</option>
+        <option value="savings" data-i18n="filter.sort.savings">Savings: Highest</option>
+        <option value="city" data-i18n="filter.sort.city">City: A-Z</option>
       </select>
     </div>
   </div>

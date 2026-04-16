@@ -6,8 +6,8 @@ import '../styles/global.css';
 <Base title="AMI Calculator — Bay Area BMR" description="Calculate your Area Median Income bracket to find BMR housing you qualify for.">
   <section class="page-hero">
     <div class="container">
-      <h1 class="animate-in">AMI Calculator</h1>
-      <p class="page-hero__subtitle animate-in animate-in-delay-1">Find out which BMR listings you qualify for based on your household income and size.</p>
+      <h1 class="animate-in" data-i18n="ami.title">AMI Calculator</h1>
+      <p class="page-hero__subtitle animate-in animate-in-delay-1" data-i18n="ami.subtitle">Find out which BMR listings you qualify for based on your household income and size.</p>
     </div>
   </section>
 
@@ -16,33 +16,33 @@ import '../styles/global.css';
       <div class="ami-calculator animate-in" id="ami-calc">
         <div class="ami-form">
           <div class="ami-field">
-            <label for="household-size">Household Size</label>
+            <label for="household-size" data-i18n="ami.householdSize">Household Size</label>
             <select id="household-size" class="input">
-              <option value="1">1 person</option>
-              <option value="2">2 people</option>
-              <option value="3">3 people</option>
-              <option value="4" selected>4 people</option>
-              <option value="5">5 people</option>
-              <option value="6">6 people</option>
-              <option value="7">7 people</option>
-              <option value="8">8 people</option>
+              <option value="1" data-i18n="ami.person1">1 person</option>
+              <option value="2" data-i18n="ami.people2">2 people</option>
+              <option value="3" data-i18n="ami.people3">3 people</option>
+              <option value="4" selected data-i18n="ami.people4">4 people</option>
+              <option value="5" data-i18n="ami.people5">5 people</option>
+              <option value="6" data-i18n="ami.people6">6 people</option>
+              <option value="7" data-i18n="ami.people7">7 people</option>
+              <option value="8" data-i18n="ami.people8">8 people</option>
             </select>
           </div>
           <div class="ami-field">
-            <label for="annual-income">Annual Household Income</label>
+            <label for="annual-income" data-i18n="ami.annualIncome">Annual Household Income</label>
             <div class="input-with-prefix">
               <span class="input-prefix">$</span>
               <input type="number" id="annual-income" class="input input--prefixed" placeholder="85,000" min="0" step="1000" />
             </div>
           </div>
-          <button class="btn btn--primary btn--lg ami-submit" id="ami-submit">
+          <button class="btn btn--primary btn--lg ami-submit" id="ami-submit" data-i18n="ami.check">
             Check My AMI Level
           </button>
         </div>
 
         <div class="ami-result" id="ami-result" style="display:none;">
           <div class="ami-result__card">
-            <p class="ami-result__label">Your estimated AMI level</p>
+            <p class="ami-result__label" data-i18n="ami.result">Your estimated AMI level</p>
             <p class="ami-result__value" id="ami-value">—</p>
             <p class="ami-result__detail" id="ami-detail"></p>
           </div>
@@ -50,19 +50,19 @@ import '../styles/global.css';
       </div>
 
       <div class="content-block animate-in animate-in-delay-1">
-        <h2>What is AMI?</h2>
-        <p>Area Median Income (AMI) is the midpoint of a region's income distribution, published annually by HUD. In Santa Clara County (which covers most of the Bay Area cities we track), the 2024 AMI for a 4-person household is approximately $168,500.</p>
-        <p>BMR listings specify which AMI bracket they serve. For example, a listing at "80% AMI" means your household income must be at or below 80% of the area median income, adjusted for household size.</p>
+        <h2 data-i18n="ami.whatIsAmi">What is AMI?</h2>
+        <p data-i18n="ami.whatIsAmi.p1">Area Median Income (AMI) is the midpoint of a region's income distribution, published annually by HUD. In Santa Clara County (which covers most of the Bay Area cities we track), the 2024 AMI for a 4-person household is approximately $168,500.</p>
+        <p data-i18n="ami.whatIsAmi.p2">BMR listings specify which AMI bracket they serve. For example, a listing at "80% AMI" means your household income must be at or below 80% of the area median income, adjusted for household size.</p>
       </div>
 
       <div class="content-block animate-in animate-in-delay-2">
-        <h2>2024 Income Limits — Santa Clara County</h2>
-        <p class="text-sm" style="color: var(--color-text-tertiary); margin-bottom: var(--space-4);">Source: HCD State Income Limits. These update annually.</p>
+        <h2 data-i18n="ami.incomeLimits">2024 Income Limits — Santa Clara County</h2>
+        <p class="text-sm" style="color: var(--color-text-tertiary); margin-bottom: var(--space-4);" data-i18n="ami.incomeLimits.source">Source: HCD State Income Limits. These update annually.</p>
         <div class="table-wrapper">
           <table class="ami-table">
             <thead>
               <tr>
-                <th>Household</th>
+                <th data-i18n="ami.household">Household</th>
                 <th>30% AMI</th>
                 <th>50% AMI</th>
                 <th>80% AMI</th>
@@ -71,12 +71,12 @@ import '../styles/global.css';
               </tr>
             </thead>
             <tbody>
-              <tr><td>1 person</td><td>$35,450</td><td>$59,100</td><td>$88,750</td><td>$118,300</td><td>$141,960</td></tr>
-              <tr><td>2 people</td><td>$40,500</td><td>$67,500</td><td>$101,400</td><td>$135,200</td><td>$162,240</td></tr>
-              <tr><td>3 people</td><td>$45,550</td><td>$75,950</td><td>$114,100</td><td>$152,100</td><td>$182,520</td></tr>
-              <tr><td>4 people</td><td>$50,600</td><td>$84,400</td><td>$126,750</td><td>$168,900</td><td>$202,680</td></tr>
-              <tr><td>5 people</td><td>$54,700</td><td>$91,150</td><td>$136,900</td><td>$182,400</td><td>$218,880</td></tr>
-              <tr><td>6 people</td><td>$58,750</td><td>$97,900</td><td>$147,050</td><td>$195,950</td><td>$235,140</td></tr>
+              <tr><td data-i18n="ami.person1">1 person</td><td>$35,450</td><td>$59,100</td><td>$88,750</td><td>$118,300</td><td>$141,960</td></tr>
+              <tr><td data-i18n="ami.people2">2 people</td><td>$40,500</td><td>$67,500</td><td>$101,400</td><td>$135,200</td><td>$162,240</td></tr>
+              <tr><td data-i18n="ami.people3">3 people</td><td>$45,550</td><td>$75,950</td><td>$114,100</td><td>$152,100</td><td>$182,520</td></tr>
+              <tr><td data-i18n="ami.people4">4 people</td><td>$50,600</td><td>$84,400</td><td>$126,750</td><td>$168,900</td><td>$202,680</td></tr>
+              <tr><td data-i18n="ami.people5">5 people</td><td>$54,700</td><td>$91,150</td><td>$136,900</td><td>$182,400</td><td>$218,880</td></tr>
+              <tr><td data-i18n="ami.people6">6 people</td><td>$58,750</td><td>$97,900</td><td>$147,050</td><td>$195,950</td><td>$235,140</td></tr>
             </tbody>
           </table>
         </div>
@@ -86,117 +86,32 @@ import '../styles/global.css';
 </Base>
 
 <style>
-  .page-hero {
-    padding: var(--space-16) 0 var(--space-10);
-    background: var(--color-surface);
-    border-bottom: 1px solid var(--color-border-light);
-  }
-  .page-hero__subtitle {
-    font-size: var(--text-lg);
-    color: var(--color-text-secondary);
-    margin-top: var(--space-3);
-    max-width: 600px;
-  }
-
+  .page-hero { padding: var(--space-16) 0 var(--space-10); background: var(--color-surface); border-bottom: 1px solid var(--color-border-light); }
+  .page-hero__subtitle { font-size: var(--text-lg); color: var(--color-text-secondary); margin-top: var(--space-3); max-width: 600px; }
   .page-content { padding: var(--space-12) 0 var(--space-20); }
-
-  .ami-calculator {
-    background: var(--color-surface);
-    border-radius: var(--radius-lg);
-    border: 1px solid var(--color-border-light);
-    padding: var(--space-8);
-    margin-bottom: var(--space-12);
-    box-shadow: var(--shadow-sm);
-  }
-
-  .ami-form {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-5);
-  }
-  .ami-field label {
-    display: block;
-    font-size: var(--text-sm);
-    font-weight: 600;
-    margin-bottom: var(--space-2);
-    color: var(--color-text);
-  }
-  .input-with-prefix {
-    position: relative;
-  }
-  .input-prefix {
-    position: absolute;
-    left: var(--space-4);
-    top: 50%;
-    transform: translateY(-50%);
-    color: var(--color-text-tertiary);
-    font-weight: 500;
-  }
-  .input--prefixed {
-    padding-left: var(--space-8);
-  }
-
-  .ami-result {
-    margin-top: var(--space-6);
-    padding-top: var(--space-6);
-    border-top: 1px solid var(--color-border-light);
-  }
-  .ami-result__card {
-    text-align: center;
-    padding: var(--space-6);
-    background: var(--color-primary-light);
-    border-radius: var(--radius-lg);
-  }
-  .ami-result__label {
-    font-size: var(--text-sm);
-    color: var(--color-text-secondary);
-    font-weight: 500;
-  }
-  .ami-result__value {
-    font-family: var(--font-display);
-    font-size: var(--text-4xl);
-    font-weight: 700;
-    color: var(--color-primary);
-    margin: var(--space-2) 0;
-  }
-  .ami-result__detail {
-    font-size: var(--text-sm);
-    color: var(--color-text-secondary);
-  }
-
+  .ami-calculator { background: var(--color-surface); border-radius: var(--radius-lg); border: 1px solid var(--color-border-light); padding: var(--space-8); margin-bottom: var(--space-12); box-shadow: var(--shadow-sm); }
+  .ami-form { display: flex; flex-direction: column; gap: var(--space-5); }
+  .ami-field label { display: block; font-size: var(--text-sm); font-weight: 600; margin-bottom: var(--space-2); color: var(--color-text); }
+  .input-with-prefix { position: relative; }
+  .input-prefix { position: absolute; left: var(--space-4); top: 50%; transform: translateY(-50%); color: var(--color-text-tertiary); font-weight: 500; }
+  .input--prefixed { padding-left: var(--space-8); }
+  .ami-result { margin-top: var(--space-6); padding-top: var(--space-6); border-top: 1px solid var(--color-border-light); }
+  .ami-result__card { text-align: center; padding: var(--space-6); background: var(--color-primary-light); border-radius: var(--radius-lg); }
+  .ami-result__label { font-size: var(--text-sm); color: var(--color-text-secondary); font-weight: 500; }
+  .ami-result__value { font-family: var(--font-display); font-size: var(--text-4xl); font-weight: 700; color: var(--color-primary); margin: var(--space-2) 0; }
+  .ami-result__detail { font-size: var(--text-sm); color: var(--color-text-secondary); }
   .content-block { margin-bottom: var(--space-10); }
   .content-block h2 { margin-bottom: var(--space-4); }
   .content-block p { margin-bottom: var(--space-4); }
-
-  .table-wrapper {
-    overflow-x: auto;
-    border-radius: var(--radius-md);
-    border: 1px solid var(--color-border-light);
-  }
-  .ami-table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: var(--text-sm);
-  }
-  .ami-table th, .ami-table td {
-    padding: var(--space-3) var(--space-4);
-    text-align: right;
-    border-bottom: 1px solid var(--color-border-light);
-  }
-  .ami-table th {
-    background: var(--color-surface-sunken);
-    font-weight: 600;
-    font-size: var(--text-xs);
-    text-transform: uppercase;
-    letter-spacing: var(--tracking-wide);
-    color: var(--color-text-secondary);
-  }
+  .table-wrapper { overflow-x: auto; border-radius: var(--radius-md); border: 1px solid var(--color-border-light); }
+  .ami-table { width: 100%; border-collapse: collapse; font-size: var(--text-sm); }
+  .ami-table th, .ami-table td { padding: var(--space-3) var(--space-4); text-align: right; border-bottom: 1px solid var(--color-border-light); }
+  .ami-table th { background: var(--color-surface-sunken); font-weight: 600; font-size: var(--text-xs); text-transform: uppercase; letter-spacing: var(--tracking-wide); color: var(--color-text-secondary); }
   .ami-table td:first-child, .ami-table th:first-child { text-align: left; }
   .ami-table tbody tr:hover { background: var(--color-primary-light); }
 </style>
 
 <script>
-  // Simple AMI lookup — Santa Clara County 2024
   const limits: Record<string, number[]> = {
     '1': [35450, 59100, 88750, 118300, 141960],
     '2': [40500, 67500, 101400, 135200, 162240],
@@ -213,25 +128,17 @@ import '../styles/global.css';
     const size = (document.getElementById('household-size') as HTMLSelectElement).value;
     const incomeEl = document.getElementById('annual-income') as HTMLInputElement;
     const income = parseInt(incomeEl.value.replace(/,/g, ''));
-
     if (!income || income <= 0) { incomeEl.focus(); return; }
-
     const sizeLimits = limits[size] || limits['4'];
     let bracket = 'Above 120%';
     for (let i = 0; i < sizeLimits.length; i++) {
-      if (income <= sizeLimits[i]) {
-        bracket = `${brackets[i]}% AMI`;
-        break;
-      }
+      if (income <= sizeLimits[i]) { bracket = `${brackets[i]}% AMI`; break; }
     }
-
     const resultDiv = document.getElementById('ami-result')!;
     const valueEl = document.getElementById('ami-value')!;
     const detailEl = document.getElementById('ami-detail')!;
-
     resultDiv.style.display = 'block';
     valueEl.textContent = bracket;
-
     if (bracket === 'Above 120%') {
       detailEl.textContent = 'Your income exceeds the highest BMR bracket. You may still qualify for moderate-income programs — check individual listings.';
     } else {

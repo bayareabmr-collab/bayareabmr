@@ -1,19 +1,5 @@
-# Dependencies
-node_modules/
-
-# Build output
-dist/
-
-# Environment variables (API keys)
 .env
-.env.local
-
-# OS files
+node_modules
+dist
 .DS_Store
-Thumbs.db
-
-# Editor files
-.vscode/
-.idea/
-*.swp
-*.swo
+.astro

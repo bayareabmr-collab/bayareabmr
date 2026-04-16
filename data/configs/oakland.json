@@ -1,0 +1,27 @@
+{
+  "city": "Oakland",
+  "slug": "oakland",
+  "source": "HCD Portfolio with AMI breakdown",
+  "format": "portfolio",
+  "notes": "Oakland provides a portfolio inventory of all affordable housing developments. Unlike per-listing CPRA data, this is a full city inventory with unit counts by income tier. All entries are 'Completed' status meaning the buildings exist and are occupied.",
+  "columnMap": {
+    "Status": "status",
+    "ProjName": "name",
+    "Type": "type",
+    "Address": "address",
+    "TotalUnits": "totalUnits",
+    "AffordableUnits": "affordableUnits",
+    "Income-EL": "incomeEL",
+    "Income-VL": "incomeVL",
+    "Income-L": "incomeL",
+    "Income-Mod": "incomeMod",
+    "Manager": "managerCount",
+    "MktRate": "marketRateUnits"
+  },
+  "amiMapping": {
+    "incomeEL": 30,
+    "incomeVL": 50,
+    "incomeL": 80,
+    "incomeMod": 120
+  }
+}

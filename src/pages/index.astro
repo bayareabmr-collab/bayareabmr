@@ -4,65 +4,10 @@ import ListingCard from '../components/ListingCard.astro';
 import FilterBar from '../components/FilterBar.astro';
 import Map from '../components/Map.astro';
 import '../styles/global.css';
+import { getListings, getCities } from '../lib/listings.js';
 
-const sampleListings = [
-  {
-    id: "sunnyvale-villas-001", name: "The Villas at Sunnyvale",
-    address: "123 Innovation Way, Sunnyvale, CA", city: "Sunnyvale", status: "open",
-    applicationClose: "2026-06-15", ami: [80, 120],
-    units: [{ type: "1BR", count: 4, bmrRent: 1890, amiLevel: 80 },{ type: "2BR", count: 2, bmrRent: 2200, amiLevel: 80 },{ type: "3BR", count: 1, bmrRent: 2650, amiLevel: 120 }],
-    coordinates: { lat: 37.3688, lng: -122.0363 },
-    amenities: ["Pool", "Gym", "EV Charging", "In-Unit W/D"],
-    walkScore: 82, bmrRent: 1890, marketRent: 3450, dataSource: "Sunnyvale", lastVerified: "2026-04-01",
-  },
-  {
-    id: "fremont-station-002", name: "Fremont Station Residences",
-    address: "456 Warm Springs Blvd, Fremont, CA", city: "Fremont", status: "closing",
-    applicationClose: "2026-04-15", ami: [50, 80],
-    units: [{ type: "Studio", count: 3, bmrRent: 1200, amiLevel: 50 },{ type: "1BR", count: 5, bmrRent: 1450, amiLevel: 80 },{ type: "2BR", count: 2, bmrRent: 1750, amiLevel: 80 }],
-    coordinates: { lat: 37.5168, lng: -121.9465 },
-    amenities: ["Gym", "Parking", "Dog Park"],
-    walkScore: 71, bmrRent: 1200, marketRent: 2800, dataSource: "Fremont", lastVerified: "2026-04-01",
-  },
-  {
-    id: "mountainview-miro-003", name: "Miro at Mountain View",
-    address: "789 El Camino Real, Mountain View, CA", city: "Mountain View", status: "upcoming",
-    applicationClose: "2026-08-01", ami: [60, 100],
-    units: [{ type: "1BR", count: 6, bmrRent: 2100, amiLevel: 100 },{ type: "2BR", count: 3, bmrRent: 2500, amiLevel: 100 }],
-    coordinates: { lat: 37.3861, lng: -122.0839 },
-    amenities: ["Rooftop Deck", "Gym", "Package Lockers", "Bike Storage"],
-    walkScore: 89, bmrRent: 2100, marketRent: 3800, dataSource: "Mountain View", lastVerified: "2026-04-01",
-  },
-  {
-    id: "sanjose-parkside-004", name: "Parkside Towers",
-    address: "200 N 1st St, San Jose, CA", city: "San Jose", status: "open",
-    applicationClose: "2026-07-01", ami: [80, 120],
-    units: [{ type: "Studio", count: 6, bmrRent: 1450, amiLevel: 80 },{ type: "1BR", count: 3, bmrRent: 1790, amiLevel: 120 }],
-    coordinates: { lat: 37.3382, lng: -121.8863 },
-    amenities: ["Pool", "Coworking Space", "EV Charging", "Concierge"],
-    walkScore: 94, bmrRent: 1450, marketRent: 3200, dataSource: "San Jose", lastVerified: "2026-04-01",
-  },
-  {
-    id: "milpitas-transit-005", name: "Milpitas Transit Village",
-    address: "1 S Main St, Milpitas, CA", city: "Milpitas", status: "open",
-    applicationClose: "2026-06-30", ami: [50, 80],
-    units: [{ type: "1BR", count: 8, bmrRent: 1650, amiLevel: 80 },{ type: "2BR", count: 4, bmrRent: 1950, amiLevel: 80 }],
-    coordinates: { lat: 37.4323, lng: -121.8996 },
-    amenities: ["Near BART", "Gym", "Playground", "Package Lockers"],
-    walkScore: 76, bmrRent: 1650, marketRent: 3100, dataSource: "Milpitas", lastVerified: "2026-04-01",
-  },
-  {
-    id: "santaclara-centro-006", name: "Centro Santa Clara",
-    address: "3000 El Camino Real, Santa Clara, CA", city: "Santa Clara", status: "closed",
-    applicationClose: "2026-03-15", ami: [60, 80],
-    units: [{ type: "1BR", count: 4, bmrRent: 1700, amiLevel: 80 },{ type: "2BR", count: 2, bmrRent: 2050, amiLevel: 80 }],
-    coordinates: { lat: 37.3541, lng: -121.9552 },
-    amenities: ["Pool", "BBQ Area", "Fitness Center"],
-    walkScore: 68, bmrRent: 1700, marketRent: 3000, dataSource: "Santa Clara", lastVerified: "2026-03-15",
-  },
-];
-
-const cities = ["San Jose", "Fremont", "Milpitas", "Sunnyvale", "Santa Clara", "Mountain View", "Cupertino", "Palo Alto"];
+const listings = getListings();
+const cities = getCities();
 ---
 
 <Base title="Bay Area BMR — Affordable Housing Made Findable">
@@ -71,7 +16,7 @@ const cities = ["San Jose", "Fremont", "Milpitas", "Sunnyvale", "Santa Clara", "
       <div class="hero__content animate-in">
         <p class="hero__kicker" data-i18n="site.kicker">Free &middot; Open Source &middot; Updated Bimonthly</p>
         <h1 class="hero__title"><span data-i18n="hero.title">Find your next home</span><br/><span class="hero__highlight" data-i18n="hero.title2">at a price you can afford.</span></h1>
-        <p class="hero__subtitle" data-i18n="hero.subtitle">Every Below Market Rate housing listing across 8 Bay Area cities — in one place. Photos, amenities, deadlines, and application links.</p>
+        <p class="hero__subtitle" data-i18n="hero.subtitle">Every Below Market Rate housing listing across Bay Area cities — in one place. Photos, amenities, deadlines, and application links.</p>
       </div>
     </div>
     <div class="hero__gradient" aria-hidden="true"></div>
@@ -79,14 +24,14 @@ const cities = ["San Jose", "Fremont", "Milpitas", "Sunnyvale", "Santa Clara", "
 
   <section class="listings-section" aria-label="Available BMR listings">
     <div class="container">
-      <FilterBar cities={cities} listings={sampleListings} />
-      <Map listings={sampleListings} />
+      <FilterBar cities={cities} listings={listings} />
+      <Map listings={listings} />
       <div class="listings-header">
-        <h2><span id="listings-count">{sampleListings.length}</span> <span data-i18n="listings.count">listings across 8 cities</span></h2>
+        <h2><span id="listings-count">{listings.length}</span> <span data-i18n="listings.count">listings across Bay Area cities</span></h2>
       </div>
       <div class="listings-grid" id="listings-grid">
-        {sampleListings.map((listing, i) => (
-          <div class="listing-card-wrap" data-name={listing.name} data-address={listing.address} data-city={listing.city} data-status={listing.status} data-units={listing.units.map(u => u.type).join(',')}>
+        {listings.map((listing, i) => (
+          <div class="listing-card-wrap" data-name={listing.name} data-address={listing.address} data-city={listing.city} data-status={listing.status} data-units={(listing.units || []).map(u => u.type).join(',')}>
             <ListingCard listing={listing} />
           </div>
         ))}
@@ -103,7 +48,7 @@ const cities = ["San Jose", "Fremont", "Milpitas", "Sunnyvale", "Santa Clara", "
     <div class="container">
       <div class="value-header animate-in"><h2 data-i18n="value.title">Why Bay Area BMR?</h2><p data-i18n="value.subtitle">We built the housing search that should already exist.</p></div>
       <div class="value-grid">
-        <div class="value-card animate-in" style="animation-delay:80ms"><div class="value-card__icon">🏘️</div><h3 data-i18n="value.one.title">8 Cities, One Search</h3><p data-i18n="value.one.desc">Stop checking 8 different city websites. Every BMR listing from San Jose to Palo Alto, in one place.</p></div>
+        <div class="value-card animate-in" style="animation-delay:80ms"><div class="value-card__icon">🏘️</div><h3 data-i18n="value.one.title">Real Data, One Search</h3><p data-i18n="value.one.desc">Stop checking multiple city websites. Every BMR listing across Bay Area cities, in one place.</p></div>
         <div class="value-card animate-in" style="animation-delay:160ms"><div class="value-card__icon">📸</div><h3 data-i18n="value.two.title">See What You're Getting</h3><p data-i18n="value.two.desc">Interior photos, amenities, and market-rate comparisons. BMR units are in luxury buildings — we show you that.</p></div>
         <div class="value-card animate-in" style="animation-delay:240ms"><div class="value-card__icon">⏰</div><h3 data-i18n="value.three.title">Never Miss a Deadline</h3><p data-i18n="value.three.desc">Application windows are short. We track every deadline and will notify you when new listings open in your city.</p></div>
       </div>
@@ -152,7 +97,6 @@ const cities = ["San Jose", "Fremont", "Milpitas", "Sunnyvale", "Santa Clara", "
 </style>
 
 <script>
-  // Copy data attributes from wrappers to cards for FilterBar filtering
   document.querySelectorAll('.listing-card-wrap').forEach(wrap => {
     const card = wrap.querySelector('.listing-card');
     if (card) {

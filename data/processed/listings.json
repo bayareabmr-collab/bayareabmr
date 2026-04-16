@@ -62,5 +62,5233 @@
       "lastEnriched": "2026-04-10",
       "sources": []
     }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 16,
+        "amiLevel": 80
+      }
+    ],
+    "name": "10320 Mac Arthur Blvd Project",
+    "address": "10320 MacArthur Blvd, Oakland, CA",
+    "totalUnits": 17,
+    "affordableUnits": 16,
+    "projectType": "Acquisition",
+    "notes": "Acquisition — 16 of 17 total units are affordable",
+    "id": "oakland-10320-mac-arthur-blvd-project-06f886",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      30,
+      50,
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 46,
+        "amiLevel": 30
+      },
+      {
+        "type": "BMR",
+        "count": 29,
+        "amiLevel": 50
+      },
+      {
+        "type": "BMR",
+        "count": 104,
+        "amiLevel": 80
+      }
+    ],
+    "name": "Casa Sueños",
+    "address": "3511 E 12th St, Oakland, CA",
+    "totalUnits": 181,
+    "affordableUnits": 179,
+    "projectType": "New Construction",
+    "notes": "New Construction — 179 of 181 total units are affordable",
+    "id": "oakland-casa-sue-os-8f010f",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      30,
+      50,
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 40,
+        "amiLevel": 30
+      },
+      {
+        "type": "BMR",
+        "count": 17,
+        "amiLevel": 50
+      },
+      {
+        "type": "BMR",
+        "count": 42,
+        "amiLevel": 80
+      }
+    ],
+    "name": "Cathedral Gardens",
+    "address": "688 21st Street, Oakland, CA",
+    "totalUnits": 100,
+    "affordableUnits": 99,
+    "projectType": "New Construction",
+    "notes": "New Construction — 99 of 100 total units are affordable",
+    "id": "oakland-cathedral-gardens-4309d6",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      30,
+      50,
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 29,
+        "amiLevel": 30
+      },
+      {
+        "type": "BMR",
+        "count": 33,
+        "amiLevel": 50
+      },
+      {
+        "type": "BMR",
+        "count": 24,
+        "amiLevel": 80
+      }
+    ],
+    "name": "Estrella Vista - 3706 San Pablo, Olympia Place",
+    "address": "3706 San Pablo Avenue, Oakland, CA",
+    "totalUnits": 87,
+    "affordableUnits": 86,
+    "projectType": "New Construction",
+    "notes": "New Construction — 86 of 87 total units are affordable",
+    "id": "oakland-estrella-vista-3706-san-pablo-olympia-pl-f82c1a",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      30,
+      50,
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 10,
+        "amiLevel": 30
+      },
+      {
+        "type": "BMR",
+        "count": 29,
+        "amiLevel": 50
+      },
+      {
+        "type": "BMR",
+        "count": 53,
+        "amiLevel": 80
+      }
+    ],
+    "name": "Altenheim Phase I",
+    "address": "1720 MacArthur Blvd, Oakland, CA",
+    "totalUnits": 93,
+    "affordableUnits": 92,
+    "projectType": "Acquisition",
+    "notes": "Acquisition — 92 of 93 total units are affordable",
+    "id": "oakland-altenheim-phase-i-3c8b91",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      30,
+      50
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 55,
+        "amiLevel": 30
+      },
+      {
+        "type": "BMR",
+        "count": 80,
+        "amiLevel": 50
+      }
+    ],
+    "name": "California Hotel",
+    "address": "3501 San Pablo Ave, Oakland, CA",
+    "totalUnits": 137,
+    "affordableUnits": 135,
+    "projectType": "Acquisition",
+    "notes": "Acquisition — 135 of 137 total units are affordable",
+    "id": "oakland-california-hotel-ceeff7",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 25,
+        "amiLevel": 50
+      }
+    ],
+    "name": "Drasnin Manor",
+    "address": "2530 International Blvd, Oakland, CA",
+    "totalUnits": 26,
+    "affordableUnits": 25,
+    "projectType": "Acquisition",
+    "notes": "Acquisition — 25 of 26 total units are affordable",
+    "id": "oakland-drasnin-manor-ddc616",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      30,
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 4,
+        "amiLevel": 30
+      },
+      {
+        "type": "BMR",
+        "count": 12,
+        "amiLevel": 80
+      }
+    ],
+    "name": "East Side Arts and Housing",
+    "address": "2277-2289 International Blvd., Oakland, CA",
+    "totalUnits": 18,
+    "affordableUnits": 16,
+    "projectType": "Acquisition",
+    "notes": "Acquisition — 16 of 18 total units are affordable",
+    "id": "oakland-east-side-arts-and-housing-44b062",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 30,
+        "amiLevel": 50
+      }
+    ],
+    "name": "Fairmount Apartments",
+    "address": "401 Fairmount Avenue, Oakland, CA",
+    "totalUnits": 31,
+    "affordableUnits": 30,
+    "projectType": "Acquisition",
+    "notes": "Acquisition — 30 of 31 total units are affordable",
+    "id": "oakland-fairmount-apartments-f027c3",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50,
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 43,
+        "amiLevel": 50
+      },
+      {
+        "type": "BMR",
+        "count": 7,
+        "amiLevel": 80
+      }
+    ],
+    "name": "Kenneth Henry Ct",
+    "address": "6475 Foothill Henry Ct, Oakland, CA",
+    "totalUnits": 51,
+    "affordableUnits": 50,
+    "projectType": "Acquisition",
+    "notes": "Acquisition — 50 of 51 total units are affordable",
+    "id": "oakland-kenneth-henry-ct-a7f070",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50,
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 11,
+        "amiLevel": 50
+      },
+      {
+        "type": "BMR",
+        "count": 43,
+        "amiLevel": 80
+      }
+    ],
+    "name": "Lake Merritt Apartments",
+    "address": "1417 1st Ave, Oakland, CA",
+    "totalUnits": 55,
+    "affordableUnits": 54,
+    "projectType": "Acquisition",
+    "notes": "Acquisition — 54 of 55 total units are affordable",
+    "id": "oakland-lake-merritt-apartments-ce0309",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      30,
+      50
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 9,
+        "amiLevel": 30
+      },
+      {
+        "type": "BMR",
+        "count": 74,
+        "amiLevel": 50
+      }
+    ],
+    "name": "Saint Joseph's Apartments",
+    "address": "2647 International Blvd, Oakland, CA",
+    "totalUnits": 84,
+    "affordableUnits": 83,
+    "projectType": "Acquisition",
+    "notes": "Acquisition — 83 of 84 total units are affordable",
+    "id": "oakland-saint-joseph-s-apartments-211d8f",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50,
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 26,
+        "amiLevel": 50
+      },
+      {
+        "type": "BMR",
+        "count": 103,
+        "amiLevel": 80
+      }
+    ],
+    "name": "Southlake Tower",
+    "address": "1501 Alice St, Oakland, CA",
+    "totalUnits": 130,
+    "affordableUnits": 129,
+    "projectType": "Acquisition",
+    "notes": "Acquisition — 129 of 130 total units are affordable",
+    "id": "oakland-southlake-tower-367b11",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      30,
+      50
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 4,
+        "amiLevel": 30
+      },
+      {
+        "type": "BMR",
+        "count": 13,
+        "amiLevel": 50
+      }
+    ],
+    "name": "Swans Market Housing",
+    "address": "918 Clay St., Oakland, CA",
+    "totalUnits": 18,
+    "affordableUnits": 17,
+    "projectType": "Acquisition",
+    "notes": "Acquisition — 17 of 18 total units are affordable",
+    "id": "oakland-swans-market-housing-575d92",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      120
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 51,
+        "amiLevel": 120
+      }
+    ],
+    "name": "ArtHaus 820",
+    "address": "820 W Macarthur Blvd, Oakland, CA",
+    "totalUnits": 166,
+    "affordableUnits": 51,
+    "projectType": "Inclusionary Units",
+    "notes": "Inclusionary Units — 51 of 166 total units are affordable",
+    "id": "oakland-arthaus-820-fefb23",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      30,
+      50,
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 20,
+        "amiLevel": 30
+      },
+      {
+        "type": "BMR",
+        "count": 20,
+        "amiLevel": 50
+      },
+      {
+        "type": "BMR",
+        "count": 151,
+        "amiLevel": 80
+      }
+    ],
+    "name": "Macarthur Studios",
+    "address": "4311 MacArthur Boulevard, Oakland, CA",
+    "totalUnits": 193,
+    "affordableUnits": 191,
+    "projectType": "Inclusionary Units",
+    "notes": "Inclusionary Units — 191 of 193 total units are affordable",
+    "id": "oakland-macarthur-studios-757dd0",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      30,
+      50
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 26,
+        "amiLevel": 30
+      },
+      {
+        "type": "BMR",
+        "count": 75,
+        "amiLevel": 50
+      }
+    ],
+    "name": "The Savoy",
+    "address": "1424 Jefferson Street, Oakland, CA",
+    "totalUnits": 102,
+    "affordableUnits": 101,
+    "projectType": "Homekey/R2H2",
+    "notes": "Homekey/R2H2 — 101 of 102 total units are affordable",
+    "id": "oakland-the-savoy-5670ea",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      30,
+      50
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 14,
+        "amiLevel": 30
+      },
+      {
+        "type": "BMR",
+        "count": 11,
+        "amiLevel": 50
+      }
+    ],
+    "name": "1701 MLK",
+    "address": "1701 Martin Luther King Jr. Way, Oakland, CA",
+    "totalUnits": 26,
+    "affordableUnits": 25,
+    "projectType": "New Construction",
+    "notes": "New Construction — 25 of 26 total units are affordable",
+    "id": "oakland-1701-mlk-8344f0",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      30,
+      50
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 14,
+        "amiLevel": 30
+      },
+      {
+        "type": "BMR",
+        "count": 40,
+        "amiLevel": 50
+      }
+    ],
+    "name": "Acts Cherry Hill",
+    "address": "9409-9437 International Blvd, Oakland, CA",
+    "totalUnits": 55,
+    "affordableUnits": 54,
+    "projectType": "New Construction",
+    "notes": "New Construction — 54 of 55 total units are affordable",
+    "id": "oakland-acts-cherry-hill-9ea513",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      30,
+      50
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 17,
+        "amiLevel": 30
+      },
+      {
+        "type": "BMR",
+        "count": 41,
+        "amiLevel": 50
+      }
+    ],
+    "name": "Acts Cyrene",
+    "address": "9400 International Blvd, Oakland, CA",
+    "totalUnits": 59,
+    "affordableUnits": 58,
+    "projectType": "New Construction",
+    "notes": "New Construction — 58 of 59 total units are affordable",
+    "id": "oakland-acts-cyrene-b518de",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50,
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 31,
+        "amiLevel": 50
+      },
+      {
+        "type": "BMR",
+        "count": 6,
+        "amiLevel": 80
+      }
+    ],
+    "name": "Adeline Lofts",
+    "address": "1131 24th St, Oakland, CA",
+    "totalUnits": 38,
+    "affordableUnits": 37,
+    "projectType": "New Construction",
+    "notes": "New Construction — 37 of 38 total units are affordable",
+    "id": "oakland-adeline-lofts-36dbd1",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 75,
+        "amiLevel": 50
+      }
+    ],
+    "name": "Allen Temple Arms I",
+    "address": "8135 International Blvd, Oakland, CA",
+    "totalUnits": 76,
+    "affordableUnits": 75,
+    "projectType": "New Construction",
+    "notes": "New Construction — 75 of 76 total units are affordable",
+    "id": "oakland-allen-temple-arms-i-4d4f6c",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 49,
+        "amiLevel": 50
+      }
+    ],
+    "name": "Allen Temple Gardens (III)",
+    "address": "10121 International Blvd, Oakland, CA",
+    "totalUnits": 50,
+    "affordableUnits": 49,
+    "projectType": "New Construction",
+    "notes": "New Construction — 49 of 50 total units are affordable",
+    "id": "oakland-allen-temple-gardens-iii-54f6f3",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      30
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 23,
+        "amiLevel": 30
+      }
+    ],
+    "name": "Allen Temple Manor (IV)",
+    "address": "7607 International Blvd., Oakland, CA",
+    "totalUnits": 24,
+    "affordableUnits": 23,
+    "projectType": "New Construction",
+    "notes": "New Construction — 23 of 24 total units are affordable",
+    "id": "oakland-allen-temple-manor-iv-807d4a",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      30,
+      50,
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 28,
+        "amiLevel": 30
+      },
+      {
+        "type": "BMR",
+        "count": 30,
+        "amiLevel": 50
+      },
+      {
+        "type": "BMR",
+        "count": 22,
+        "amiLevel": 80
+      }
+    ],
+    "name": "Altenheim Phase II",
+    "address": "1720 MacArthur Blvd, Oakland, CA",
+    "totalUnits": 81,
+    "affordableUnits": 80,
+    "projectType": "New Construction",
+    "notes": "New Construction — 80 of 81 total units are affordable",
+    "id": "oakland-altenheim-phase-ii-8bd6f2",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      30,
+      50,
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 39,
+        "amiLevel": 30
+      },
+      {
+        "type": "BMR",
+        "count": 24,
+        "amiLevel": 50
+      },
+      {
+        "type": "BMR",
+        "count": 13,
+        "amiLevel": 80
+      }
+    ],
+    "name": "Ancora Place",
+    "address": "2255 International Blvd, Oakland, CA",
+    "totalUnits": 77,
+    "affordableUnits": 76,
+    "projectType": "New Construction",
+    "notes": "New Construction — 76 of 77 total units are affordable",
+    "id": "oakland-ancora-place-b3d2ba",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 60,
+        "amiLevel": 50
+      }
+    ],
+    "name": "Bancroft Senior Homes",
+    "address": "5636 Bancroft Ave, Oakland, CA",
+    "totalUnits": 61,
+    "affordableUnits": 60,
+    "projectType": "New Construction",
+    "notes": "New Construction — 60 of 61 total units are affordable",
+    "id": "oakland-bancroft-senior-homes-685b73",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 16,
+        "amiLevel": 50
+      }
+    ],
+    "name": "Bishop Nichols Senior Housing",
+    "address": "1027 62nd St, Oakland, CA",
+    "totalUnits": 17,
+    "affordableUnits": 16,
+    "projectType": "New Construction",
+    "notes": "New Construction — 16 of 17 total units are affordable",
+    "id": "oakland-bishop-nichols-senior-housing-9a48d6",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      30,
+      50
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 9,
+        "amiLevel": 30
+      },
+      {
+        "type": "BMR",
+        "count": 27,
+        "amiLevel": 50
+      }
+    ],
+    "name": "Camino 23",
+    "address": "1233-1253 23rd Avenue & 2285 International Blvd Oakland, CA",
+    "totalUnits": 37,
+    "affordableUnits": 36,
+    "projectType": "New Construction",
+    "notes": "New Construction — 36 of 37 total units are affordable",
+    "id": "oakland-camino-23-4c4170",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 68,
+        "amiLevel": 80
+      }
+    ],
+    "name": "Chestnut Linden Court",
+    "address": "2240 Chestnut St, Oakland, CA",
+    "totalUnits": 151,
+    "affordableUnits": 68,
+    "projectType": "New Construction",
+    "notes": "New Construction — 68 of 151 total units are affordable",
+    "id": "oakland-chestnut-linden-court-2c855e",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      30,
+      50,
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 12,
+        "amiLevel": 30
+      },
+      {
+        "type": "BMR",
+        "count": 14,
+        "amiLevel": 50
+      },
+      {
+        "type": "BMR",
+        "count": 13,
+        "amiLevel": 80
+      }
+    ],
+    "name": "Civic Center TOD",
+    "address": "632 14th St, Oakland, CA",
+    "totalUnits": 40,
+    "affordableUnits": 39,
+    "projectType": "New Construction",
+    "notes": "New Construction — 39 of 40 total units are affordable",
+    "id": "oakland-civic-center-tod-33327f",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      30,
+      50,
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 14,
+        "amiLevel": 30
+      },
+      {
+        "type": "BMR",
+        "count": 23,
+        "amiLevel": 50
+      },
+      {
+        "type": "BMR",
+        "count": 17,
+        "amiLevel": 80
+      }
+    ],
+    "name": "Clinton Commons",
+    "address": "720 E. 11th Street, Oakland, CA",
+    "totalUnits": 55,
+    "affordableUnits": 54,
+    "projectType": "New Construction",
+    "notes": "New Construction — 54 of 55 total units are affordable",
+    "id": "oakland-clinton-commons-dacbac",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50,
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 22,
+        "amiLevel": 50
+      },
+      {
+        "type": "BMR",
+        "count": 33,
+        "amiLevel": 80
+      }
+    ],
+    "name": "Coliseum Connections",
+    "address": "805 71st Ave, Oakland, CA",
+    "totalUnits": 110,
+    "affordableUnits": 55,
+    "projectType": "New Construction",
+    "notes": "New Construction — 55 of 110 total units are affordable",
+    "id": "oakland-coliseum-connections-e8f1ab",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      30,
+      50
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 14,
+        "amiLevel": 30
+      },
+      {
+        "type": "BMR",
+        "count": 44,
+        "amiLevel": 50
+      }
+    ],
+    "name": "Coliseum Place",
+    "address": "7120 Hawley Street, Oakland, CA",
+    "totalUnits": 59,
+    "affordableUnits": 58,
+    "projectType": "New Construction",
+    "notes": "New Construction — 58 of 59 total units are affordable",
+    "id": "oakland-coliseum-place-0b969e",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 18,
+        "amiLevel": 50
+      }
+    ],
+    "name": "Coolidge Ct",
+    "address": "3800 Coolidge Ave, Oakland, CA",
+    "totalUnits": 19,
+    "affordableUnits": 18,
+    "projectType": "New Construction",
+    "notes": "New Construction — 18 of 19 total units are affordable",
+    "id": "oakland-coolidge-ct-e1ded0",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50,
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 22,
+        "amiLevel": 50
+      },
+      {
+        "type": "BMR",
+        "count": 31,
+        "amiLevel": 80
+      }
+    ],
+    "name": "E.E. Cleveland Manor",
+    "address": "2611 Alvingroom Ct, Oakland, CA",
+    "totalUnits": 54,
+    "affordableUnits": 53,
+    "projectType": "New Construction",
+    "notes": "New Construction — 53 of 54 total units are affordable",
+    "id": "oakland-e-e-cleveland-manor-029fee",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 18,
+        "amiLevel": 50
+      }
+    ],
+    "name": "Eastmont Court",
+    "address": "6850 Foothill Blvd, Oakland, CA",
+    "totalUnits": 19,
+    "affordableUnits": 18,
+    "projectType": "New Construction",
+    "notes": "New Construction — 18 of 19 total units are affordable",
+    "id": "oakland-eastmont-court-8bbe73",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 39,
+        "amiLevel": 50
+      }
+    ],
+    "name": "Eldridge Gonaway Commons",
+    "address": "275 E. 12th street, Oakland, CA",
+    "totalUnits": 40,
+    "affordableUnits": 39,
+    "projectType": "New Construction",
+    "notes": "New Construction — 39 of 40 total units are affordable",
+    "id": "oakland-eldridge-gonaway-commons-badbf4",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      30,
+      50,
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 47,
+        "amiLevel": 30
+      },
+      {
+        "type": "BMR",
+        "count": 45,
+        "amiLevel": 50
+      },
+      {
+        "type": "BMR",
+        "count": 31,
+        "amiLevel": 80
+      }
+    ],
+    "name": "Foon Lok East",
+    "address": "389 9th Avenue, Oakland, CA",
+    "totalUnits": 124,
+    "affordableUnits": 123,
+    "projectType": "New Construction",
+    "notes": "New Construction — 123 of 124 total units are affordable",
+    "id": "oakland-foon-lok-east-a178d8",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      30,
+      50,
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 52,
+        "amiLevel": 30
+      },
+      {
+        "type": "BMR",
+        "count": 37,
+        "amiLevel": 50
+      },
+      {
+        "type": "BMR",
+        "count": 40,
+        "amiLevel": 80
+      }
+    ],
+    "name": "Foon Lok West",
+    "address": "311 9th Ave., Oakland, CA",
+    "totalUnits": 130,
+    "affordableUnits": 129,
+    "projectType": "New Construction",
+    "notes": "New Construction — 129 of 130 total units are affordable",
+    "id": "oakland-foon-lok-west-4f7fcd",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      30,
+      50,
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 6,
+        "amiLevel": 30
+      },
+      {
+        "type": "BMR",
+        "count": 46,
+        "amiLevel": 50
+      },
+      {
+        "type": "BMR",
+        "count": 27,
+        "amiLevel": 80
+      }
+    ],
+    "name": "Fox Courts",
+    "address": "555 19th Street, Oakland, CA",
+    "totalUnits": 80,
+    "affordableUnits": 79,
+    "projectType": "New Construction",
+    "notes": "New Construction — 79 of 80 total units are affordable",
+    "id": "oakland-fox-courts-926802",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 51,
+        "amiLevel": 80
+      }
+    ],
+    "name": "Granite Point (Foothill Plaza)",
+    "address": "2701 64th Avenue, Oakland, CA",
+    "totalUnits": 54,
+    "affordableUnits": 51,
+    "projectType": "New Construction",
+    "notes": "New Construction — 51 of 54 total units are affordable",
+    "id": "oakland-granite-point-foothill-plaza-3139c4",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 72,
+        "amiLevel": 50
+      }
+    ],
+    "name": "Harrison Street Senior Housing",
+    "address": "1633 Harrison Street, Oakland, CA",
+    "totalUnits": 73,
+    "affordableUnits": 72,
+    "projectType": "New Construction",
+    "notes": "New Construction — 72 of 73 total units are affordable",
+    "id": "oakland-harrison-street-senior-housing-deb32e",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 21,
+        "amiLevel": 80
+      }
+    ],
+    "name": "Hillside Terrace (San Antonio Terrace)",
+    "address": "1485 E 22nd St, Oakland, CA",
+    "totalUnits": 23,
+    "affordableUnits": 21,
+    "projectType": "New Construction",
+    "notes": "New Construction — 21 of 23 total units are affordable",
+    "id": "oakland-hillside-terrace-san-antonio-terrace-a83700",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50,
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 28,
+        "amiLevel": 50
+      },
+      {
+        "type": "BMR",
+        "count": 62,
+        "amiLevel": 80
+      }
+    ],
+    "name": "Hismen Hin-nu Terrace",
+    "address": "2555 International Blvd, Oakland, CA",
+    "totalUnits": 92,
+    "affordableUnits": 90,
+    "projectType": "New Construction",
+    "notes": "New Construction — 90 of 92 total units are affordable",
+    "id": "oakland-hismen-hin-nu-terrace-819cd2",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 98,
+        "amiLevel": 50
+      }
+    ],
+    "name": "Ironhorse at Central Station",
+    "address": "1801 14th Street, Oakland, CA",
+    "totalUnits": 99,
+    "affordableUnits": 98,
+    "projectType": "New Construction",
+    "notes": "New Construction — 98 of 99 total units are affordable",
+    "id": "oakland-ironhorse-at-central-station-7a9028",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 79,
+        "amiLevel": 50
+      }
+    ],
+    "name": "J.L. Richards Terrace",
+    "address": "250 E 12th St, Oakland, CA",
+    "totalUnits": 80,
+    "affordableUnits": 79,
+    "projectType": "New Construction",
+    "notes": "New Construction — 79 of 80 total units are affordable",
+    "id": "oakland-j-l-richards-terrace-5b34e2",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      30,
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 24,
+        "amiLevel": 30
+      },
+      {
+        "type": "BMR",
+        "count": 36,
+        "amiLevel": 80
+      }
+    ],
+    "name": "Jack London Gateway Senior Housing",
+    "address": "989 Brush Street, Oakland, CA",
+    "totalUnits": 61,
+    "affordableUnits": 60,
+    "projectType": "New Construction",
+    "notes": "New Construction — 60 of 61 total units are affordable",
+    "id": "oakland-jack-london-gateway-senior-housing-a28644",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      30
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 67,
+        "amiLevel": 30
+      }
+    ],
+    "name": "Las Bougainvilleas",
+    "address": "1223 37th ave, Oakland, CA",
+    "totalUnits": 68,
+    "affordableUnits": 67,
+    "projectType": "New Construction",
+    "notes": "New Construction — 67 of 68 total units are affordable",
+    "id": "oakland-las-bougainvilleas-867215",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50,
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 24,
+        "amiLevel": 50
+      },
+      {
+        "type": "BMR",
+        "count": 57,
+        "amiLevel": 80
+      }
+    ],
+    "name": "Lincoln Court Senior Housing",
+    "address": "2400 MacArthur Blvd, Oakland, CA",
+    "totalUnits": 82,
+    "affordableUnits": 81,
+    "projectType": "New Construction",
+    "notes": "New Construction — 81 of 82 total units are affordable",
+    "id": "oakland-lincoln-court-senior-housing-4907ab",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 127,
+        "amiLevel": 50
+      }
+    ],
+    "name": "Lion Creek Crossings V",
+    "address": "6710 Lion Way, Oakland, CA",
+    "totalUnits": 128,
+    "affordableUnits": 127,
+    "projectType": "New Construction",
+    "notes": "New Construction — 127 of 128 total units are affordable",
+    "id": "oakland-lion-creek-crossings-v-8351e6",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      30,
+      50,
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 6,
+        "amiLevel": 30
+      },
+      {
+        "type": "BMR",
+        "count": 24,
+        "amiLevel": 50
+      },
+      {
+        "type": "BMR",
+        "count": 1,
+        "amiLevel": 80
+      }
+    ],
+    "name": "MacArthur Apartments",
+    "address": "9800 MacArthur Blvd, Oakland, CA",
+    "totalUnits": 32,
+    "affordableUnits": 31,
+    "projectType": "New Construction",
+    "notes": "New Construction — 31 of 32 total units are affordable",
+    "id": "oakland-macarthur-apartments-cfdb08",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50,
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 13,
+        "amiLevel": 50
+      },
+      {
+        "type": "BMR",
+        "count": 8,
+        "amiLevel": 80
+      }
+    ],
+    "name": "Marcus Garvey Commons",
+    "address": "721 Wood st, Oakland, CA",
+    "totalUnits": 22,
+    "affordableUnits": 21,
+    "projectType": "New Construction",
+    "notes": "New Construction — 21 of 22 total units are affordable",
+    "id": "oakland-marcus-garvey-commons-65856d",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      30,
+      50
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 13,
+        "amiLevel": 30
+      },
+      {
+        "type": "BMR",
+        "count": 56,
+        "amiLevel": 50
+      }
+    ],
+    "name": "Merritt Crossings",
+    "address": "609 Oak Street, Oakland, CA",
+    "totalUnits": 70,
+    "affordableUnits": 69,
+    "projectType": "New Construction",
+    "notes": "New Construction — 69 of 70 total units are affordable",
+    "id": "oakland-merritt-crossings-55ec85",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      30,
+      50,
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 13,
+        "amiLevel": 30
+      },
+      {
+        "type": "BMR",
+        "count": 18,
+        "amiLevel": 50
+      },
+      {
+        "type": "BMR",
+        "count": 19,
+        "amiLevel": 80
+      }
+    ],
+    "name": "Monarch Homes",
+    "address": "3268 San Pablo Ave, Oakland, CA",
+    "totalUnits": 51,
+    "affordableUnits": 50,
+    "projectType": "New Construction",
+    "notes": "New Construction — 50 of 51 total units are affordable",
+    "id": "oakland-monarch-homes-85e828",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      30,
+      50
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 29,
+        "amiLevel": 30
+      },
+      {
+        "type": "BMR",
+        "count": 60,
+        "amiLevel": 50
+      }
+    ],
+    "name": "Mural Apartments @ MacArthur Transit Village",
+    "address": "MacArthur BART Station, Oakland, CA",
+    "totalUnits": 90,
+    "affordableUnits": 89,
+    "projectType": "New Construction",
+    "notes": "New Construction — 89 of 90 total units are affordable",
+    "id": "oakland-mural-apartments-macarthur-transit-villa-5b91ea",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      30,
+      50,
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 8,
+        "amiLevel": 30
+      },
+      {
+        "type": "BMR",
+        "count": 26,
+        "amiLevel": 50
+      },
+      {
+        "type": "BMR",
+        "count": 6,
+        "amiLevel": 80
+      }
+    ],
+    "name": "Northgate Apartments",
+    "address": "2301 Northgate Ave, Oakland, CA",
+    "totalUnits": 41,
+    "affordableUnits": 40,
+    "projectType": "New Construction",
+    "notes": "New Construction — 40 of 41 total units are affordable",
+    "id": "oakland-northgate-apartments-04019a",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      30,
+      50,
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 8,
+        "amiLevel": 30
+      },
+      {
+        "type": "BMR",
+        "count": 19,
+        "amiLevel": 50
+      },
+      {
+        "type": "BMR",
+        "count": 11,
+        "amiLevel": 80
+      }
+    ],
+    "name": "Oak Street Terrace",
+    "address": "1109 Oak St, Oakland, CA",
+    "totalUnits": 39,
+    "affordableUnits": 38,
+    "projectType": "New Construction",
+    "notes": "New Construction — 38 of 39 total units are affordable",
+    "id": "oakland-oak-street-terrace-1d048f",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      30,
+      50,
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 10,
+        "amiLevel": 30
+      },
+      {
+        "type": "BMR",
+        "count": 60,
+        "amiLevel": 50
+      },
+      {
+        "type": "BMR",
+        "count": 30,
+        "amiLevel": 80
+      }
+    ],
+    "name": "Paseo Estero",
+    "address": "255 8th Avenue (Parcel F), Oakland, CA",
+    "totalUnits": 101,
+    "affordableUnits": 100,
+    "projectType": "New Construction",
+    "notes": "New Construction — 100 of 101 total units are affordable",
+    "id": "oakland-paseo-estero-cbdf2e",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50,
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 40,
+        "amiLevel": 50
+      },
+      {
+        "type": "BMR",
+        "count": 59,
+        "amiLevel": 80
+      }
+    ],
+    "name": "Posada de Colores",
+    "address": "2221 fruitvale Ave, Oakland, CA",
+    "totalUnits": 100,
+    "affordableUnits": 99,
+    "projectType": "New Construction",
+    "notes": "New Construction — 99 of 100 total units are affordable",
+    "id": "oakland-posada-de-colores-774907",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      30,
+      50,
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 22,
+        "amiLevel": 30
+      },
+      {
+        "type": "BMR",
+        "count": 18,
+        "amiLevel": 50
+      },
+      {
+        "type": "BMR",
+        "count": 30,
+        "amiLevel": 80
+      }
+    ],
+    "name": "Prosperity Place (11th & Jackson)",
+    "address": "188 11th Street, Oakland, CA",
+    "totalUnits": 71,
+    "affordableUnits": 70,
+    "projectType": "New Construction",
+    "notes": "New Construction — 70 of 71 total units are affordable",
+    "id": "oakland-prosperity-place-11th-jackson-5da545",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      30,
+      50
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 21,
+        "amiLevel": 30
+      },
+      {
+        "type": "BMR",
+        "count": 19,
+        "amiLevel": 50
+      }
+    ],
+    "name": "Providence House",
+    "address": "540 23rd St, Oakland, CA",
+    "totalUnits": 41,
+    "affordableUnits": 40,
+    "projectType": "New Construction",
+    "notes": "New Construction — 40 of 41 total units are affordable",
+    "id": "oakland-providence-house-fea5c4",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      30
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 30,
+        "amiLevel": 30
+      }
+    ],
+    "name": "Rising Oaks",
+    "address": "3800 Coolidge Avenue, Oakland, CA",
+    "totalUnits": 31,
+    "affordableUnits": 30,
+    "projectType": "New Construction",
+    "notes": "New Construction — 30 of 31 total units are affordable",
+    "id": "oakland-rising-oaks-535691",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      30,
+      50,
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 13,
+        "amiLevel": 30
+      },
+      {
+        "type": "BMR",
+        "count": 10,
+        "amiLevel": 50
+      },
+      {
+        "type": "BMR",
+        "count": 12,
+        "amiLevel": 80
+      }
+    ],
+    "name": "Seven Directions",
+    "address": "2946 International Blvd, Oakland, CA",
+    "totalUnits": 36,
+    "affordableUnits": 35,
+    "projectType": "New Construction",
+    "notes": "New Construction — 35 of 36 total units are affordable",
+    "id": "oakland-seven-directions-e8920c",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50,
+      80,
+      120
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 27,
+        "amiLevel": 50
+      },
+      {
+        "type": "BMR",
+        "count": 3,
+        "amiLevel": 80
+      },
+      {
+        "type": "BMR",
+        "count": 1,
+        "amiLevel": 120
+      }
+    ],
+    "name": "Slim Jenkins Ct",
+    "address": "700 Willow St, Oakland, CA",
+    "totalUnits": 32,
+    "affordableUnits": 31,
+    "projectType": "New Construction",
+    "notes": "New Construction — 31 of 32 total units are affordable",
+    "id": "oakland-slim-jenkins-ct-0d258d",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50,
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 18,
+        "amiLevel": 50
+      },
+      {
+        "type": "BMR",
+        "count": 69,
+        "amiLevel": 80
+      }
+    ],
+    "name": "Sojourner Truth Manor",
+    "address": "5815, 5915, 6015 Martin Luther King Jr Wy, Oakland, CA",
+    "totalUnits": 88,
+    "affordableUnits": 87,
+    "projectType": "New Construction",
+    "notes": "New Construction — 87 of 88 total units are affordable",
+    "id": "oakland-sojourner-truth-manor-e98c90",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      30,
+      50
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 3,
+        "amiLevel": 30
+      },
+      {
+        "type": "BMR",
+        "count": 20,
+        "amiLevel": 50
+      }
+    ],
+    "name": "Stanley Avenue Apartments",
+    "address": "6006 International Blvd, Oakland, CA",
+    "totalUnits": 24,
+    "affordableUnits": 23,
+    "projectType": "New Construction",
+    "notes": "New Construction — 23 of 24 total units are affordable",
+    "id": "oakland-stanley-avenue-apartments-5e7258",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      30,
+      50,
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 25,
+        "amiLevel": 30
+      },
+      {
+        "type": "BMR",
+        "count": 18,
+        "amiLevel": 50
+      },
+      {
+        "type": "BMR",
+        "count": 18,
+        "amiLevel": 80
+      }
+    ],
+    "name": "Terraza Palmera",
+    "address": "2647 International Blvd, Oakland, CA",
+    "totalUnits": 62,
+    "affordableUnits": 61,
+    "projectType": "New Construction",
+    "notes": "New Construction — 61 of 62 total units are affordable",
+    "id": "oakland-terraza-palmera-6efd96",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 64,
+        "amiLevel": 50
+      }
+    ],
+    "name": "The Orchards on Foothill",
+    "address": "2719 Foothill Blvd, Oakland, CA",
+    "totalUnits": 65,
+    "affordableUnits": 64,
+    "projectType": "New Construction",
+    "notes": "New Construction — 64 of 65 total units are affordable",
+    "id": "oakland-the-orchards-on-foothill-dd5398",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      30,
+      50,
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 49,
+        "amiLevel": 30
+      },
+      {
+        "type": "BMR",
+        "count": 25,
+        "amiLevel": 50
+      },
+      {
+        "type": "BMR",
+        "count": 26,
+        "amiLevel": 80
+      }
+    ],
+    "name": "The Phoenix",
+    "address": "801 Pine Street, Oakland, CA",
+    "totalUnits": 101,
+    "affordableUnits": 100,
+    "projectType": "New Construction",
+    "notes": "New Construction — 100 of 101 total units are affordable",
+    "id": "oakland-the-phoenix-95e592",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 19,
+        "amiLevel": 80
+      }
+    ],
+    "name": "Ventana Townhomes",
+    "address": "2000 internaitonal blvd, Oakland, CA",
+    "totalUnits": 20,
+    "affordableUnits": 19,
+    "projectType": "New Construction",
+    "notes": "New Construction — 19 of 20 total units are affordable",
+    "id": "oakland-ventana-townhomes-2f0c5f",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      30,
+      50,
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 11,
+        "amiLevel": 30
+      },
+      {
+        "type": "BMR",
+        "count": 67,
+        "amiLevel": 50
+      },
+      {
+        "type": "BMR",
+        "count": 31,
+        "amiLevel": 80
+      }
+    ],
+    "name": "Vista Estero",
+    "address": "285 8th Avenue (Parcel F), Oakland, CA",
+    "totalUnits": 110,
+    "affordableUnits": 109,
+    "projectType": "New Construction",
+    "notes": "New Construction — 109 of 110 total units are affordable",
+    "id": "oakland-vista-estero-de7be3",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50,
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 101,
+        "amiLevel": 50
+      },
+      {
+        "type": "BMR",
+        "count": 102,
+        "amiLevel": 80
+      }
+    ],
+    "name": "Acorn Towncenter I and II",
+    "address": "1143-10th St., Oakland, CA",
+    "totalUnits": 206,
+    "affordableUnits": 203,
+    "projectType": "Rehabilitation",
+    "notes": "Rehabilitation — 203 of 206 total units are affordable",
+    "id": "oakland-acorn-towncenter-i-and-ii-8b3c85",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 49,
+        "amiLevel": 80
+      }
+    ],
+    "name": "Adcock-Joyner Apts.",
+    "address": "532 16th St, Oakland, CA",
+    "totalUnits": 50,
+    "affordableUnits": 49,
+    "projectType": "Rehabilitation",
+    "notes": "Rehabilitation — 49 of 50 total units are affordable",
+    "id": "oakland-adcock-joyner-apts-399ec1",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 85,
+        "amiLevel": 80
+      }
+    ],
+    "name": "Courtyards at Acorn",
+    "address": "923 Adeline, Oakland, CA",
+    "totalUnits": 87,
+    "affordableUnits": 85,
+    "projectType": "Rehabilitation",
+    "notes": "Rehabilitation — 85 of 87 total units are affordable",
+    "id": "oakland-courtyards-at-acorn-f3fe5d",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 17,
+        "amiLevel": 50
+      }
+    ],
+    "name": "CURA-North",
+    "address": "531 24th Street, Oakland, CA",
+    "totalUnits": 18,
+    "affordableUnits": 17,
+    "projectType": "Rehabilitation",
+    "notes": "Rehabilitation — 17 of 18 total units are affordable",
+    "id": "oakland-cura-north-07b768",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50,
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 4,
+        "amiLevel": 50
+      },
+      {
+        "type": "BMR",
+        "count": 16,
+        "amiLevel": 80
+      }
+    ],
+    "name": "Effies House",
+    "address": "829 E 19th St, Oakland, CA",
+    "totalUnits": 21,
+    "affordableUnits": 20,
+    "projectType": "Rehabilitation",
+    "notes": "Rehabilitation — 20 of 21 total units are affordable",
+    "id": "oakland-effies-house-5d384e",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 42,
+        "amiLevel": 50
+      }
+    ],
+    "name": "Hugh Taylor House",
+    "address": "1935 Seminary Ave, Oakland, CA",
+    "totalUnits": 43,
+    "affordableUnits": 42,
+    "projectType": "Rehabilitation",
+    "notes": "Rehabilitation — 42 of 43 total units are affordable",
+    "id": "oakland-hugh-taylor-house-72b329",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50,
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 17,
+        "amiLevel": 50
+      },
+      {
+        "type": "BMR",
+        "count": 8,
+        "amiLevel": 80
+      }
+    ],
+    "name": "James Lee Court",
+    "address": "690 15th St, Oakland, CA",
+    "totalUnits": 26,
+    "affordableUnits": 25,
+    "projectType": "Rehabilitation",
+    "notes": "Rehabilitation — 25 of 26 total units are affordable",
+    "id": "oakland-james-lee-court-d1b8c2",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50,
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 38,
+        "amiLevel": 50
+      },
+      {
+        "type": "BMR",
+        "count": 58,
+        "amiLevel": 80
+      }
+    ],
+    "name": "Madison Park Apts",
+    "address": "100 9th St, Oakland, CA",
+    "totalUnits": 98,
+    "affordableUnits": 96,
+    "projectType": "Rehabilitation",
+    "notes": "Rehabilitation — 96 of 98 total units are affordable",
+    "id": "oakland-madison-park-apts-09b388",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 31,
+        "amiLevel": 50
+      }
+    ],
+    "name": "Madrone Hotel",
+    "address": "477 8th St, Oakland, CA",
+    "totalUnits": 32,
+    "affordableUnits": 31,
+    "projectType": "Rehabilitation",
+    "notes": "Rehabilitation — 31 of 32 total units are affordable",
+    "id": "oakland-madrone-hotel-3aab67",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 59,
+        "amiLevel": 50
+      }
+    ],
+    "name": "Saint Andrews Manor",
+    "address": "3250 San Pablo Ave, Oakland, CA",
+    "totalUnits": 60,
+    "affordableUnits": 59,
+    "projectType": "Rehabilitation",
+    "notes": "Rehabilitation — 59 of 60 total units are affordable",
+    "id": "oakland-saint-andrews-manor-cb8f2b",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 65,
+        "amiLevel": 50
+      }
+    ],
+    "name": "Saint Patricks Terrace",
+    "address": "1212 Center St, Oakland, CA",
+    "totalUnits": 66,
+    "affordableUnits": 65,
+    "projectType": "Rehabilitation",
+    "notes": "Rehabilitation — 65 of 66 total units are affordable",
+    "id": "oakland-saint-patricks-terrace-39febe",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 130,
+        "amiLevel": 50
+      }
+    ],
+    "name": "San Pablo Hotel",
+    "address": "1955 San Pablo Ave, Oakland, CA",
+    "totalUnits": 144,
+    "affordableUnits": 130,
+    "projectType": "Rehabilitation",
+    "notes": "Rehabilitation — 130 of 144 total units are affordable",
+    "id": "oakland-san-pablo-hotel-b4c4fa",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 29,
+        "amiLevel": 50
+      }
+    ],
+    "name": "Santana Apts",
+    "address": "2220 10th Ave, Oakland, CA",
+    "totalUnits": 30,
+    "affordableUnits": 29,
+    "projectType": "Rehabilitation",
+    "notes": "Rehabilitation — 29 of 30 total units are affordable",
+    "id": "oakland-santana-apts-f05298",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 8,
+        "amiLevel": 80
+      }
+    ],
+    "name": "Casa Grande Apartments",
+    "address": "2124?2125 92nd Avenue Oakland, CA 94603",
+    "totalUnits": 32,
+    "affordableUnits": 8,
+    "projectType": "Acquisition",
+    "notes": "Acquisition — 8 of 32 total units are affordable",
+    "id": "oakland-casa-grande-apartments-aa8f25",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 10,
+        "amiLevel": 80
+      }
+    ],
+    "name": "Creekside Apartments",
+    "address": "3465 RICHMOND BLVD, Oakland, CA",
+    "totalUnits": 13,
+    "affordableUnits": 10,
+    "projectType": "Acquisition",
+    "notes": "Acquisition — 10 of 13 total units are affordable",
+    "id": "oakland-creekside-apartments-edf8bd",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 10,
+        "amiLevel": 80
+      }
+    ],
+    "name": "Emerald Estates",
+    "address": "71 10th St, Oakland, CA",
+    "totalUnits": 34,
+    "affordableUnits": 10,
+    "projectType": "Acquisition",
+    "notes": "Acquisition — 10 of 34 total units are affordable",
+    "id": "oakland-emerald-estates-88eb6b",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 10,
+        "amiLevel": 80
+      }
+    ],
+    "name": "Foothill Apartments",
+    "address": "646 Foothill Blvd, Oakland, CA",
+    "totalUnits": 15,
+    "affordableUnits": 10,
+    "projectType": "Acquisition",
+    "notes": "Acquisition — 10 of 15 total units are affordable",
+    "id": "oakland-foothill-apartments-03c02a",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 8,
+        "amiLevel": 80
+      }
+    ],
+    "name": "Kensington Gardens",
+    "address": "1900 26th Ave, Oakland, CA",
+    "totalUnits": 32,
+    "affordableUnits": 8,
+    "projectType": "Acquisition",
+    "notes": "Acquisition — 8 of 32 total units are affordable",
+    "id": "oakland-kensington-gardens-bddedb",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 10,
+        "amiLevel": 80
+      }
+    ],
+    "name": "Vernon St Apartments",
+    "address": "430 Vernon St, Oakland, CA",
+    "totalUnits": 12,
+    "affordableUnits": 10,
+    "projectType": "Acquisition",
+    "notes": "Acquisition — 10 of 12 total units are affordable",
+    "id": "oakland-vernon-st-apartments-13e3e3",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50,
+      80,
+      120
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 14,
+        "amiLevel": 50
+      },
+      {
+        "type": "BMR",
+        "count": 11,
+        "amiLevel": 80
+      },
+      {
+        "type": "BMR",
+        "count": 11,
+        "amiLevel": 120
+      }
+    ],
+    "name": "Alexan Webster",
+    "address": "2330 Webster St, Oakland, CA",
+    "totalUnits": 234,
+    "affordableUnits": 36,
+    "projectType": "Inclusionary Units",
+    "notes": "Inclusionary Units — 36 of 234 total units are affordable",
+    "id": "oakland-alexan-webster-b048bb",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 27,
+        "amiLevel": 50
+      }
+    ],
+    "name": "Atlas Apartments",
+    "address": "385 14th Street, Oakland, CA",
+    "totalUnits": 633,
+    "affordableUnits": 27,
+    "projectType": "Inclusionary Units",
+    "notes": "Inclusionary Units — 27 of 633 total units are affordable",
+    "id": "oakland-atlas-apartments-2850d1",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 3,
+        "amiLevel": 50
+      }
+    ],
+    "name": "Density Bonus Units (3rd St)",
+    "address": "335 3rd St, Oakland, CA",
+    "totalUnits": 38,
+    "affordableUnits": 3,
+    "projectType": "Inclusionary Units",
+    "notes": "Inclusionary Units — 3 of 38 total units are affordable",
+    "id": "oakland-density-bonus-units-3rd-st-fb8351",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      120
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 35,
+        "amiLevel": 120
+      }
+    ],
+    "name": "Density Bonus Units (9th St)",
+    "address": "685 9th St, Oakland, CA",
+    "totalUnits": 117,
+    "affordableUnits": 35,
+    "projectType": "Inclusionary Units",
+    "notes": "Inclusionary Units — 35 of 117 total units are affordable",
+    "id": "oakland-density-bonus-units-9th-st-71e17f",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      120
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 13,
+        "amiLevel": 120
+      }
+    ],
+    "name": "Density Bonus Units (Broadway)",
+    "address": "233 Broadway, Oakland, CA",
+    "totalUnits": 130,
+    "affordableUnits": 13,
+    "projectType": "Inclusionary Units",
+    "notes": "Inclusionary Units — 13 of 130 total units are affordable",
+    "id": "oakland-density-bonus-units-broadway-c6dc2c",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      120
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 9,
+        "amiLevel": 120
+      }
+    ],
+    "name": "Electric Lofts",
+    "address": "2415 Valdez, Oakland, CA",
+    "totalUnits": 89,
+    "affordableUnits": 9,
+    "projectType": "Inclusionary Units",
+    "notes": "Inclusionary Units — 9 of 89 total units are affordable",
+    "id": "oakland-electric-lofts-eeff87",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 11,
+        "amiLevel": 80
+      }
+    ],
+    "name": "MacArthur Commons",
+    "address": "539 39th St, Oakland, CA",
+    "totalUnits": 385,
+    "affordableUnits": 11,
+    "projectType": "Inclusionary Units",
+    "notes": "Inclusionary Units — 11 of 385 total units are affordable",
+    "id": "oakland-macarthur-commons-529b8a",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 3,
+        "amiLevel": 50
+      }
+    ],
+    "name": "One Piedmont",
+    "address": "230 W MacArthur Blvd, Oakland, CA",
+    "totalUnits": 57,
+    "affordableUnits": 3,
+    "projectType": "Inclusionary Units",
+    "notes": "Inclusionary Units — 3 of 57 total units are affordable",
+    "id": "oakland-one-piedmont-bc4c5a",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      120
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 24,
+        "amiLevel": 120
+      }
+    ],
+    "name": "Prescott Station",
+    "address": "2121 Wood St, Oakland, CA",
+    "totalUnits": 235,
+    "affordableUnits": 24,
+    "projectType": "Inclusionary Units",
+    "notes": "Inclusionary Units — 24 of 235 total units are affordable",
+    "id": "oakland-prescott-station-b9a6b3",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 15,
+        "amiLevel": 50
+      }
+    ],
+    "name": "The Lark at Uptown",
+    "address": "269 24th St, Oakland, CA",
+    "totalUnits": 330,
+    "affordableUnits": 15,
+    "projectType": "Inclusionary Units",
+    "notes": "Inclusionary Units — 15 of 330 total units are affordable",
+    "id": "oakland-the-lark-at-uptown-740f16",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 17,
+        "amiLevel": 50
+      }
+    ],
+    "name": "The Logan",
+    "address": "5110 Telegraph Avenue, Oakland, CA",
+    "totalUnits": 204,
+    "affordableUnits": 17,
+    "projectType": "Inclusionary Units",
+    "notes": "Inclusionary Units — 17 of 204 total units are affordable",
+    "id": "oakland-the-logan-94c883",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      120
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 45,
+        "amiLevel": 120
+      }
+    ],
+    "name": "The Skylyne at Temescal",
+    "address": "3883 Turquoise Way, Oakland, CA",
+    "totalUnits": 402,
+    "affordableUnits": 45,
+    "projectType": "Inclusionary Units",
+    "notes": "Inclusionary Units — 45 of 402 total units are affordable",
+    "id": "oakland-the-skylyne-at-temescal-e97835",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50,
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 59,
+        "amiLevel": 50
+      },
+      {
+        "type": "BMR",
+        "count": 22,
+        "amiLevel": 80
+      }
+    ],
+    "name": "Lion Creek Crossings I",
+    "address": "881 69th Ave, Oakland, CA",
+    "totalUnits": 115,
+    "affordableUnits": 81,
+    "projectType": "New Construction",
+    "notes": "New Construction — 81 of 115 total units are affordable",
+    "id": "oakland-lion-creek-crossings-i-d3af51",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50,
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 59,
+        "amiLevel": 50
+      },
+      {
+        "type": "BMR",
+        "count": 20,
+        "amiLevel": 80
+      }
+    ],
+    "name": "Lion Creek Crossings III",
+    "address": "950 66th Avenue, Oakland, CA",
+    "totalUnits": 106,
+    "affordableUnits": 79,
+    "projectType": "New Construction",
+    "notes": "New Construction — 79 of 106 total units are affordable",
+    "id": "oakland-lion-creek-crossings-iii-bbca34",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      30,
+      50,
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 18,
+        "amiLevel": 30
+      },
+      {
+        "type": "BMR",
+        "count": 54,
+        "amiLevel": 50
+      },
+      {
+        "type": "BMR",
+        "count": 50,
+        "amiLevel": 80
+      }
+    ],
+    "name": "Mandela Gateway Rental Housing",
+    "address": "1346 and 1420 7th Street, Oakland, CA",
+    "totalUnits": 168,
+    "affordableUnits": 122,
+    "projectType": "New Construction",
+    "notes": "New Construction — 122 of 168 total units are affordable",
+    "id": "oakland-mandela-gateway-rental-housing-7a541b",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      30,
+      50
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 30,
+        "amiLevel": 30
+      },
+      {
+        "type": "BMR",
+        "count": 29,
+        "amiLevel": 50
+      }
+    ],
+    "name": "Tassafaronga Village",
+    "address": "919 85th Avenue, Oakland, CA",
+    "totalUnits": 137,
+    "affordableUnits": 59,
+    "projectType": "New Construction",
+    "notes": "New Construction — 59 of 137 total units are affordable",
+    "id": "oakland-tassafaronga-village-4bdf59",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 34,
+        "amiLevel": 80
+      }
+    ],
+    "name": "10th Ave Eastlake",
+    "address": "2515 10th Avenue, Oakland, CA",
+    "totalUnits": 34,
+    "affordableUnits": 34,
+    "projectType": "Acquisition",
+    "notes": "Acquisition — 34 of 34 total units are affordable",
+    "id": "oakland-10th-ave-eastlake-019dac",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 7,
+        "amiLevel": 80
+      }
+    ],
+    "name": "1432 12th Avenue Cooperative",
+    "address": "1432 12th Avenue, Oakland, CA",
+    "totalUnits": 7,
+    "affordableUnits": 7,
+    "projectType": "Acquisition",
+    "notes": "Acquisition — 7 of 7 total units are affordable",
+    "id": "oakland-1432-12th-avenue-cooperative-b0c893",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 14,
+        "amiLevel": 80
+      }
+    ],
+    "name": "1534 29th Avenue",
+    "address": "1534 29th Ave, Oakland, CA",
+    "totalUnits": 14,
+    "affordableUnits": 14,
+    "projectType": "Acquisition",
+    "notes": "Acquisition — 14 of 14 total units are affordable",
+    "id": "oakland-1534-29th-avenue-be4385",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 8,
+        "amiLevel": 80
+      }
+    ],
+    "name": "23rd Ave & International Blvd",
+    "address": "1236 23rd Ave, Oakland, CA",
+    "totalUnits": 8,
+    "affordableUnits": 8,
+    "projectType": "Acquisition",
+    "notes": "Acquisition — 8 of 8 total units are affordable",
+    "id": "oakland-23rd-ave-international-blvd-65bcd2",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 9,
+        "amiLevel": 80
+      }
+    ],
+    "name": "285 Newton Ave",
+    "address": "285 Newton Avenue, Oakland, CA",
+    "totalUnits": 9,
+    "affordableUnits": 9,
+    "projectType": "Acquisition",
+    "notes": "Acquisition — 9 of 9 total units are affordable",
+    "id": "oakland-285-newton-ave-e62196",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 51,
+        "amiLevel": 50
+      }
+    ],
+    "name": "Allen Temple Arms II",
+    "address": "1388 81st Ave, Oakland, CA",
+    "totalUnits": 51,
+    "affordableUnits": 51,
+    "projectType": "Acquisition",
+    "notes": "Acquisition — 51 of 51 total units are affordable",
+    "id": "oakland-allen-temple-arms-ii-f095ae",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 20,
+        "amiLevel": 50
+      }
+    ],
+    "name": "Casa Velasco",
+    "address": "2221 fruitvale Ave, Oakland, CA",
+    "totalUnits": 20,
+    "affordableUnits": 20,
+    "projectType": "Acquisition",
+    "notes": "Acquisition — 20 of 20 total units are affordable",
+    "id": "oakland-casa-velasco-1ece03",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 7,
+        "amiLevel": 80
+      }
+    ],
+    "name": "E24 Community Studios",
+    "address": "812 East 24th Street, Oakland, CA",
+    "totalUnits": 7,
+    "affordableUnits": 7,
+    "projectType": "Acquisition",
+    "notes": "Acquisition — 7 of 7 total units are affordable",
+    "id": "oakland-e24-community-studios-d34456",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      30,
+      50,
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 11,
+        "amiLevel": 30
+      },
+      {
+        "type": "BMR",
+        "count": 1,
+        "amiLevel": 50
+      },
+      {
+        "type": "BMR",
+        "count": 11,
+        "amiLevel": 80
+      }
+    ],
+    "name": "Fruitvale Studios",
+    "address": "2600 International Blvd, Oakland, CA",
+    "totalUnits": 24,
+    "affordableUnits": 23,
+    "projectType": "Acquisition",
+    "notes": "Acquisition — 23 of 24 total units are affordable",
+    "id": "oakland-fruitvale-studios-9e87e2",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      30
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 62,
+        "amiLevel": 30
+      }
+    ],
+    "name": "Henry Robinson Multi-Service Ctr",
+    "address": "559 16th St, Oakland, CA",
+    "totalUnits": 62,
+    "affordableUnits": 62,
+    "projectType": "Acquisition",
+    "notes": "Acquisition — 62 of 62 total units are affordable",
+    "id": "oakland-henry-robinson-multi-service-ctr-1a5792",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 22,
+        "amiLevel": 80
+      }
+    ],
+    "name": "Highland Palms",
+    "address": "1810 E. 25th Street, Oakland, CA",
+    "totalUnits": 22,
+    "affordableUnits": 22,
+    "projectType": "Acquisition",
+    "notes": "Acquisition — 22 of 22 total units are affordable",
+    "id": "oakland-highland-palms-238443",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 14,
+        "amiLevel": 80
+      }
+    ],
+    "name": "MacArthur Park Apartments",
+    "address": "7975/8005 MacArthur Boulevard, Oakland, CA",
+    "totalUnits": 53,
+    "affordableUnits": 14,
+    "projectType": "Acquisition",
+    "notes": "Acquisition — 14 of 53 total units are affordable",
+    "id": "oakland-macarthur-park-apartments-6d822d",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      30,
+      50
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 10,
+        "amiLevel": 30
+      },
+      {
+        "type": "BMR",
+        "count": 4,
+        "amiLevel": 50
+      }
+    ],
+    "name": "Matilda Cleveland",
+    "address": "8314 MacArthur Blvd, Oakland, CA",
+    "totalUnits": 14,
+    "affordableUnits": 14,
+    "projectType": "Acquisition",
+    "notes": "Acquisition — 14 of 14 total units are affordable",
+    "id": "oakland-matilda-cleveland-08f48d",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50,
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 16,
+        "amiLevel": 50
+      },
+      {
+        "type": "BMR",
+        "count": 18,
+        "amiLevel": 80
+      }
+    ],
+    "name": "Oak Park Apartments",
+    "address": "2618 E. 16th St, Oakland, CA",
+    "totalUnits": 35,
+    "affordableUnits": 34,
+    "projectType": "Acquisition",
+    "notes": "Acquisition — 34 of 35 total units are affordable",
+    "id": "oakland-oak-park-apartments-51b74f",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 3,
+        "amiLevel": 80
+      }
+    ],
+    "name": "OakCLT Scattered Site",
+    "address": "2242 107th Ave, 5330 Wentworth Ave, 1709 87th Ave, Oakland, CA",
+    "totalUnits": 3,
+    "affordableUnits": 3,
+    "projectType": "Acquisition",
+    "notes": "Acquisition — 3 of 3 total units are affordable",
+    "id": "oakland-oakclt-scattered-site-ea6cef",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 31,
+        "amiLevel": 50
+      }
+    ],
+    "name": "Oakland Point Limited Partnership",
+    "address": "1448 10th St., Oakland, CA",
+    "totalUnits": 31,
+    "affordableUnits": 31,
+    "projectType": "Acquisition",
+    "notes": "Acquisition — 31 of 31 total units are affordable",
+    "id": "oakland-oakland-point-limited-partnership-239781",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 5,
+        "amiLevel": 50
+      }
+    ],
+    "name": "Peter Babcock House",
+    "address": "2350 Woolsey St, Oakland, CA",
+    "totalUnits": 5,
+    "affordableUnits": 5,
+    "projectType": "Acquisition",
+    "notes": "Acquisition — 5 of 5 total units are affordable",
+    "id": "oakland-peter-babcock-house-70fddc",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      30
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 70,
+        "amiLevel": 30
+      }
+    ],
+    "name": "The Holland",
+    "address": "641 W Grand Avenue, Oakland, CA",
+    "totalUnits": 70,
+    "affordableUnits": 70,
+    "projectType": "Acquisition",
+    "notes": "Acquisition — 70 of 70 total units are affordable",
+    "id": "oakland-the-holland-b358eb",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 18,
+        "amiLevel": 50
+      }
+    ],
+    "name": "United Together Manor",
+    "address": "9410 MacArthur Blvd, Oakland, CA",
+    "totalUnits": 18,
+    "affordableUnits": 18,
+    "projectType": "Acquisition",
+    "notes": "Acquisition — 18 of 18 total units are affordable",
+    "id": "oakland-united-together-manor-411ba1",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 3,
+        "amiLevel": 50
+      }
+    ],
+    "name": "Density Bonus Units (Broadway)",
+    "address": "4045 Broadway, Oakland, CA",
+    "totalUnits": 47,
+    "affordableUnits": 3,
+    "projectType": "Inclusionary Units",
+    "notes": "Inclusionary Units — 3 of 47 total units are affordable",
+    "id": "oakland-density-bonus-units-broadway-c6dc2c",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 61,
+        "amiLevel": 80
+      }
+    ],
+    "name": "Aztec Hotel - House of Dignity",
+    "address": "583-587 8th St, Oakland, CA",
+    "totalUnits": 61,
+    "affordableUnits": 61,
+    "projectType": "Homekey/R2H2",
+    "notes": "Homekey/R2H2 — 61 of 61 total units are affordable",
+    "id": "oakland-aztec-hotel-house-of-dignity-7099a3",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      30
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 72,
+        "amiLevel": 30
+      }
+    ],
+    "name": "BACS Co-Housing Site 14/15",
+    "address": "6922 Weld Street (+others), Oakland, CA",
+    "totalUnits": 72,
+    "affordableUnits": 72,
+    "projectType": "Homekey/R2H2",
+    "notes": "Homekey/R2H2 — 72 of 72 total units are affordable",
+    "id": "oakland-bacs-co-housing-site-14-15-d8aefa",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      30
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 41,
+        "amiLevel": 30
+      }
+    ],
+    "name": "Clifton Hall",
+    "address": "5276 Broadway, Oakland, CA",
+    "totalUnits": 41,
+    "affordableUnits": 41,
+    "projectType": "Homekey/R2H2",
+    "notes": "Homekey/R2H2 — 41 of 41 total units are affordable",
+    "id": "oakland-clifton-hall-a67f9a",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      30
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 36,
+        "amiLevel": 30
+      }
+    ],
+    "name": "Coliseum Commons",
+    "address": "4801 Coliseum Way, Oakland, CA",
+    "totalUnits": 36,
+    "affordableUnits": 36,
+    "projectType": "Homekey/R2H2",
+    "notes": "Homekey/R2H2 — 36 of 36 total units are affordable",
+    "id": "oakland-coliseum-commons-7b6ecc",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      30
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 26,
+        "amiLevel": 30
+      }
+    ],
+    "name": "Friendly Manor",
+    "address": "2298 San Pablo Ave, Oakland, CA",
+    "totalUnits": 26,
+    "affordableUnits": 26,
+    "projectType": "Homekey/R2H2",
+    "notes": "Homekey/R2H2 — 26 of 26 total units are affordable",
+    "id": "oakland-friendly-manor-b7d739",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      30
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 34,
+        "amiLevel": 30
+      }
+    ],
+    "name": "Kingdom Builders Transitional Housing Program",
+    "address": "2321 International Blvd, Oakland, CA",
+    "totalUnits": 34,
+    "affordableUnits": 34,
+    "projectType": "Homekey/R2H2",
+    "notes": "Homekey/R2H2 — 34 of 34 total units are affordable",
+    "id": "oakland-kingdom-builders-transitional-housing-pr-524b97",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      30
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 44,
+        "amiLevel": 30
+      }
+    ],
+    "name": "Piedmont Homes",
+    "address": "55 MacArthur Blvd, Oakland, CA",
+    "totalUnits": 45,
+    "affordableUnits": 44,
+    "projectType": "Homekey/R2H2",
+    "notes": "Homekey/R2H2 — 44 of 45 total units are affordable",
+    "id": "oakland-piedmont-homes-f397a9",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      30
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 21,
+        "amiLevel": 30
+      }
+    ],
+    "name": "Temescal Commons",
+    "address": "3720 Telegraph Avenue, Oakland, CA",
+    "totalUnits": 21,
+    "affordableUnits": 21,
+    "projectType": "Homekey/R2H2",
+    "notes": "Homekey/R2H2 — 21 of 21 total units are affordable",
+    "id": "oakland-temescal-commons-98e2b9",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      30
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 43,
+        "amiLevel": 30
+      }
+    ],
+    "name": "Aurora Apartments",
+    "address": "657 W MacArthur Blvd, Oakland, CA",
+    "totalUnits": 44,
+    "affordableUnits": 43,
+    "projectType": "New Construction",
+    "notes": "New Construction — 43 of 44 total units are affordable",
+    "id": "oakland-aurora-apartments-6670da",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      30,
+      50,
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 23,
+        "amiLevel": 30
+      },
+      {
+        "type": "BMR",
+        "count": 49,
+        "amiLevel": 50
+      },
+      {
+        "type": "BMR",
+        "count": 20,
+        "amiLevel": 80
+      }
+    ],
+    "name": "Casa Arabella",
+    "address": "3611 E. 12th Street, Oakland, CA",
+    "totalUnits": 94,
+    "affordableUnits": 92,
+    "projectType": "New Construction",
+    "notes": "New Construction — 92 of 94 total units are affordable",
+    "id": "oakland-casa-arabella-95a17c",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50,
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 3,
+        "amiLevel": 50
+      },
+      {
+        "type": "BMR",
+        "count": 7,
+        "amiLevel": 80
+      }
+    ],
+    "name": "Fruitvale Transit Village",
+    "address": "3301 and 3411 E 12th St, Oakland, CA",
+    "totalUnits": 47,
+    "affordableUnits": 10,
+    "projectType": "New Construction",
+    "notes": "New Construction — 10 of 47 total units are affordable",
+    "id": "oakland-fruitvale-transit-village-1b6231",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      30,
+      50
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 8,
+        "amiLevel": 30
+      },
+      {
+        "type": "BMR",
+        "count": 2,
+        "amiLevel": 50
+      }
+    ],
+    "name": "Homes Now in the Community",
+    "address": "1800 Linden St, Oakland, CA",
+    "totalUnits": 10,
+    "affordableUnits": 10,
+    "projectType": "New Construction",
+    "notes": "New Construction — 10 of 10 total units are affordable",
+    "id": "oakland-homes-now-in-the-community-308cc5",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 29,
+        "amiLevel": 50
+      }
+    ],
+    "name": "International Blvd Family Housing",
+    "address": "6600 International Blvd, Oakland, CA",
+    "totalUnits": 30,
+    "affordableUnits": 29,
+    "projectType": "New Construction",
+    "notes": "New Construction — 29 of 30 total units are affordable",
+    "id": "oakland-international-blvd-family-housing-df97a0",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 40,
+        "amiLevel": 50
+      }
+    ],
+    "name": "Irene Cooper Terrace",
+    "address": "1218 2nd Ave, Oakland, CA",
+    "totalUnits": 40,
+    "affordableUnits": 40,
+    "projectType": "New Construction",
+    "notes": "New Construction — 40 of 40 total units are affordable",
+    "id": "oakland-irene-cooper-terrace-8fce1d",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 146,
+        "amiLevel": 80
+      }
+    ],
+    "name": "Lion Creek Crossings II",
+    "address": "885 69th Ave, Oakland, CA",
+    "totalUnits": 146,
+    "affordableUnits": 146,
+    "projectType": "New Construction",
+    "notes": "New Construction — 146 of 146 total units are affordable",
+    "id": "oakland-lion-creek-crossings-ii-0f7c12",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50,
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 5,
+        "amiLevel": 50
+      },
+      {
+        "type": "BMR",
+        "count": 67,
+        "amiLevel": 80
+      }
+    ],
+    "name": "Lion Creek Crossings IV",
+    "address": "6591 Lion Way, Oakland, CA",
+    "totalUnits": 72,
+    "affordableUnits": 72,
+    "projectType": "New Construction",
+    "notes": "New Construction — 72 of 72 total units are affordable",
+    "id": "oakland-lion-creek-crossings-iv-6fb503",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      30,
+      50,
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 18,
+        "amiLevel": 30
+      },
+      {
+        "type": "BMR",
+        "count": 20,
+        "amiLevel": 50
+      },
+      {
+        "type": "BMR",
+        "count": 40,
+        "amiLevel": 80
+      }
+    ],
+    "name": "Madison @ 14th Street Apartments",
+    "address": "160 14th Street, Oakland, CA",
+    "totalUnits": 79,
+    "affordableUnits": 78,
+    "projectType": "New Construction",
+    "notes": "New Construction — 78 of 79 total units are affordable",
+    "id": "oakland-madison-14th-street-apartments-53b8e5",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 13,
+        "amiLevel": 50
+      }
+    ],
+    "name": "Marlon Riggs Apts",
+    "address": "269 Vernon St, Oakland, CA",
+    "totalUnits": 13,
+    "affordableUnits": 13,
+    "projectType": "New Construction",
+    "notes": "New Construction — 13 of 13 total units are affordable",
+    "id": "oakland-marlon-riggs-apts-bdc6b5",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      30
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 56,
+        "amiLevel": 30
+      }
+    ],
+    "name": "Nova Apartments",
+    "address": "445 30th Street, Oakland, CA",
+    "totalUnits": 57,
+    "affordableUnits": 56,
+    "projectType": "New Construction",
+    "notes": "New Construction — 56 of 57 total units are affordable",
+    "id": "oakland-nova-apartments-046eb1",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      30,
+      50
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 18,
+        "amiLevel": 30
+      },
+      {
+        "type": "BMR",
+        "count": 26,
+        "amiLevel": 50
+      }
+    ],
+    "name": "Percy Abram, Jr Senior Apartments",
+    "address": "1094 Alcatraz Ave, Oakland, CA",
+    "totalUnits": 44,
+    "affordableUnits": 44,
+    "projectType": "New Construction",
+    "notes": "New Construction — 44 of 44 total units are affordable",
+    "id": "oakland-percy-abram-jr-senior-apartments-96362d",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      30,
+      50
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 8,
+        "amiLevel": 30
+      },
+      {
+        "type": "BMR",
+        "count": 19,
+        "amiLevel": 50
+      }
+    ],
+    "name": "Redwood Hill Townhomes",
+    "address": "4856-4868 Calaveras Ave, Oakland, CA",
+    "totalUnits": 28,
+    "affordableUnits": 27,
+    "projectType": "New Construction",
+    "notes": "New Construction — 27 of 28 total units are affordable",
+    "id": "oakland-redwood-hill-townhomes-088a1b",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 55,
+        "amiLevel": 80
+      }
+    ],
+    "name": "Sister Thea Bowman Manor",
+    "address": "6400 San Pablo Ave, Oakland, CA",
+    "totalUnits": 56,
+    "affordableUnits": 55,
+    "projectType": "New Construction",
+    "notes": "New Construction — 55 of 56 total units are affordable",
+    "id": "oakland-sister-thea-bowman-manor-69b82a",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 64,
+        "amiLevel": 50
+      }
+    ],
+    "name": "Sylvester Rutledge Manor",
+    "address": "3255 San Pablo Ave, Oakland, CA",
+    "totalUnits": 65,
+    "affordableUnits": 64,
+    "projectType": "New Construction",
+    "notes": "New Construction — 64 of 65 total units are affordable",
+    "id": "oakland-sylvester-rutledge-manor-990ba5",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      30,
+      50,
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 50,
+        "amiLevel": 30
+      },
+      {
+        "type": "BMR",
+        "count": 14,
+        "amiLevel": 50
+      },
+      {
+        "type": "BMR",
+        "count": 14,
+        "amiLevel": 80
+      }
+    ],
+    "name": "The Black Panther",
+    "address": "1680 7th St, Oakland, CA",
+    "totalUnits": 79,
+    "affordableUnits": 78,
+    "projectType": "New Construction",
+    "notes": "New Construction — 78 of 79 total units are affordable",
+    "id": "oakland-the-black-panther-f57c53",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50,
+      120
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 133,
+        "amiLevel": 50
+      },
+      {
+        "type": "BMR",
+        "count": 33,
+        "amiLevel": 120
+      }
+    ],
+    "name": "Uptown Apartments",
+    "address": "500, 600, 601 Wiliiams Street, Oakland, CA",
+    "totalUnits": 665,
+    "affordableUnits": 166,
+    "projectType": "New Construction",
+    "notes": "New Construction — 166 of 665 total units are affordable",
+    "id": "oakland-uptown-apartments-654fa0",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      30,
+      50,
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 33,
+        "amiLevel": 30
+      },
+      {
+        "type": "BMR",
+        "count": 17,
+        "amiLevel": 50
+      },
+      {
+        "type": "BMR",
+        "count": 8,
+        "amiLevel": 80
+      }
+    ],
+    "name": "West Grand & Brush",
+    "address": "2201 Brush St, Oakland, CA",
+    "totalUnits": 59,
+    "affordableUnits": 58,
+    "projectType": "New Construction",
+    "notes": "New Construction — 58 of 59 total units are affordable",
+    "id": "oakland-west-grand-brush-101ced",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 6,
+        "amiLevel": 50
+      }
+    ],
+    "name": "396 Fairmount",
+    "address": "396 Fairmount Ave, Oakland, CA",
+    "totalUnits": 6,
+    "affordableUnits": 6,
+    "projectType": "Rehabilitation",
+    "notes": "Rehabilitation — 6 of 6 total units are affordable",
+    "id": "oakland-396-fairmount-a10c5b",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 72,
+        "amiLevel": 50
+      }
+    ],
+    "name": "C.L. Dellums Apts",
+    "address": "644 14th St, Oakland, CA",
+    "totalUnits": 73,
+    "affordableUnits": 72,
+    "projectType": "Rehabilitation",
+    "notes": "Rehabilitation — 72 of 73 total units are affordable",
+    "id": "oakland-c-l-dellums-apts-d36dfb",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      30,
+      50,
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 17,
+        "amiLevel": 30
+      },
+      {
+        "type": "BMR",
+        "count": 10,
+        "amiLevel": 50
+      },
+      {
+        "type": "BMR",
+        "count": 38,
+        "amiLevel": 80
+      }
+    ],
+    "name": "Empyrean Tower",
+    "address": "344 13th Street, Oakland, CA",
+    "totalUnits": 65,
+    "affordableUnits": 65,
+    "projectType": "Rehabilitation",
+    "notes": "Rehabilitation — 65 of 65 total units are affordable",
+    "id": "oakland-empyrean-tower-a4c041",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      30,
+      50,
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 30,
+        "amiLevel": 30
+      },
+      {
+        "type": "BMR",
+        "count": 32,
+        "amiLevel": 50
+      },
+      {
+        "type": "BMR",
+        "count": 55,
+        "amiLevel": 80
+      }
+    ],
+    "name": "Frank G Mar Apartments",
+    "address": "283 13th St, Oakland, CA",
+    "totalUnits": 119,
+    "affordableUnits": 117,
+    "projectType": "Rehabilitation",
+    "notes": "Rehabilitation — 117 of 119 total units are affordable",
+    "id": "oakland-frank-g-mar-apartments-268605",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 81,
+        "amiLevel": 50
+      }
+    ],
+    "name": "Harrison Hotel",
+    "address": "1415 Harrison Street, Oakland, CA",
+    "totalUnits": 81,
+    "affordableUnits": 81,
+    "projectType": "Rehabilitation",
+    "notes": "Rehabilitation — 81 of 81 total units are affordable",
+    "id": "oakland-harrison-hotel-c724f1",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 6,
+        "amiLevel": 80
+      }
+    ],
+    "name": "Peace Gardens",
+    "address": "484-486 36th St., Oakland, CA",
+    "totalUnits": 6,
+    "affordableUnits": 6,
+    "projectType": "Rehabilitation",
+    "notes": "Rehabilitation — 6 of 6 total units are affordable",
+    "id": "oakland-peace-gardens-55a326",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 100,
+        "amiLevel": 80
+      }
+    ],
+    "name": "Piedmont Apts",
+    "address": "215 W MacArthur Blvd, Oakland, CA",
+    "totalUnits": 250,
+    "affordableUnits": 100,
+    "projectType": "Rehabilitation",
+    "notes": "Rehabilitation — 100 of 250 total units are affordable",
+    "id": "oakland-piedmont-apts-9b2ed4",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 20,
+        "amiLevel": 50
+      }
+    ],
+    "name": "Project Pride",
+    "address": "2545 San Pablo Ave, Oakland, CA",
+    "totalUnits": 20,
+    "affordableUnits": 20,
+    "projectType": "Rehabilitation",
+    "notes": "Rehabilitation — 20 of 20 total units are affordable",
+    "id": "oakland-project-pride-f3b114",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 13,
+        "amiLevel": 50
+      }
+    ],
+    "name": "Rosa Parks House",
+    "address": "521 W. Grand Ave, Oakland, CA",
+    "totalUnits": 13,
+    "affordableUnits": 13,
+    "projectType": "Rehabilitation",
+    "notes": "Rehabilitation — 13 of 13 total units are affordable",
+    "id": "oakland-rosa-parks-house-9892f7",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      50,
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 118,
+        "amiLevel": 50
+      },
+      {
+        "type": "BMR",
+        "count": 8,
+        "amiLevel": 80
+      }
+    ],
+    "name": "The Grove Apartments",
+    "address": "2700-2785 Alvingroom Court, Oakland, CA",
+    "totalUnits": 126,
+    "affordableUnits": 126,
+    "projectType": "Rehabilitation",
+    "notes": "Rehabilitation — 126 of 126 total units are affordable",
+    "id": "oakland-the-grove-apartments-8b38b6",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
+  },
+  {
+    "city": "Oakland",
+    "dataSource": "Oakland HCD",
+    "sourceFormat": "portfolio",
+    "lastVerified": "2026-04-14",
+    "status": "open",
+    "ami": [
+      80
+    ],
+    "units": [
+      {
+        "type": "BMR",
+        "count": 3,
+        "amiLevel": 80
+      }
+    ],
+    "name": "West Street",
+    "address": "3927 West St., Oakland, CA",
+    "totalUnits": 3,
+    "affordableUnits": 3,
+    "projectType": "Rehabilitation",
+    "notes": "Rehabilitation — 3 of 3 total units are affordable",
+    "id": "oakland-west-street-8ba5a3",
+    "enrichment": {
+      "lastEnriched": null,
+      "sources": []
+    }
   }
 ]
